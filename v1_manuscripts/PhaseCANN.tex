@@ -36,7 +36,7 @@
 %% \documentclass[final,3p,times]{elsarticle}
 %% \documentclass[final,3p,times,twocolumn]{elsarticle}
 %% \documentclass[final,5p,times]{elsarticle}
-\documentclass[final,5p,times,twocolumn]{elsarticle}
+\documentclass[final,5p,times,twocolumn,authoryear]{elsarticle}
 
 %% For including figures, graphicx.sty has been loaded in
 %% elsarticle.cls. If you prefer to use the old commands
@@ -114,7 +114,7 @@
 %%             country={}}
 %% \fntext[label3]{}
 
-\title{PhaseCANN: An continuous attractors neural network model for grid-cell module.}
+\title{An continuous attractors network model for grid-cell modules based on toroidal manifolds}
 
 %% use optional labels to link authors explicitly to addresses:
 %% \author[label1,label2]{}
@@ -158,7 +158,7 @@
             country={China}}
             
 \begin{abstract}
-Although grid cells in the entorhinal cortex are regarded to be a key component of spatial cognition in animals, the latent mechanisms of grid-cell firing are still up for discussion. Current main computational models of grid cells focus more on the activity of single grid cell. However, The evidence has suggested that the grid-cell activity was generally organized into a small number of discrete functional modules\citep{Stensola2012}. Here, we proposed a continuous attractors network(CAN) model for grid-cell modules. The propose model is driven using the self-motion input from the speed cells and head direction cells of animals. In addition, a new mechanism is designed to transform the external cues from place cells to grid-cell modules. Consistent with the experiment results, every grid-cell neuron in the CAN can reproduce the hexagonal firing patterns with driving the model. Our model simultaneously shows the path integration capability that a grid-cell module is thought to have. Even when the animal lacks the correction of external cues, our model still predicts the prominent performance of path integration for grid-cell modules over long distances. 
+Although grid cells in the entorhinal cortex are regarded to be a key component of spatial cognition in animals, the latent mechanisms of grid-cell firing are still up for discussion. Current main computational models of grid cells focus more on the activity of single grid cell. However, The evidence has suggested that the grid-cell activity was generally organized into a small number of discrete functional modules\citep{Stensola2012}. Here, we proposed a continuous attractors network(CAN) model for grid-cell modules. The propose model not only can be driven using the self-motion input from the speed cells and head direction cells of animals but also it is injected energy by receiving the external cues via place cells. Consistent with the experiment results, every grid-cell neuron in the CAN can reproduce the hexagonal firing patterns with driving the model. Our model simultaneously shows the path integration capability that a grid-cell module is thought to have. Even when the animal lacks the correction of external cues, our model still predicts the prominent performance of path integration for grid-cell modules over long distances. In addition, our model also support the hypothesis\citep{Gardner2022} that the grid cells from an single module exist on a toroidal manifold.
 
 \end{abstract}
 
@@ -184,23 +184,24 @@ Grid cell \sep Place cell  \sep Continuous attractors network \sep Path integrat
 
 %% main text
 \section{Introduction}
-The spatial cognition is crucial for rodent animals to find food and return their nests. The concept of cognitive map first is proposed as an abstract map to represent the environment in the brain of animals\citep{Tolman1948}. The entorhinal-hippocampal circuit is widely thought to provide the material foundation for cognitive\citep{McNaughton2006}. Especially, the spatial relative cells including head direction cells, place cells, speed cells and grid cells are gradually discovered consecutively in the entorhinal-hippocampal circuit. The one of important dicovery is grid cells in the medial entorhinal cortex(mEC)\citep{Moser2017} due to their special firing patterns. The grid cells have hexagonally arranged firing fields that can cover entire environment that a freely moving animal has passed through\citep{Rowland2016}. In addition, the grid cells widely exist in many kinds of animals, including rat, mice\citep{Fyhn2008}, bats\citep{Yartsev2011}, monkey\citep{Killian2012} and human\citep{Jacobs2013,Kunz2015,Doeller2010}. This shows that the grid cells widely exist in mEC as an important role in the cognitive map of rodent animals. Since the discovery of the grid cells, the function of them in cognitive map keep drawing attention to researchers all the time. One crucial problem of grid cells is the reason how the hexagonal firing patterns are formed. 
+The spatial cognition is crucial for rodent animals to find food and return their nests. The concept of cognitive map first is proposed as an abstract map to represent the environment in the brain of animals\citep{Tolman1948}. The entorhinal-hippocampal circuit is widely thought to provide the material foundation for cognitive\citep{McNaughton2006}. Especially, the spatial relative cells including head direction cells, place cells, speed cells and grid cells are gradually discovered consecutively in the entorhinal-hippocampal circuit. The one of important dicovery is grid cells in the medial entorhinal cortex(mEC)\citep{Moser2017} due to their special firing patterns. The grid cells have hexagonally arranged firing fields that can cover entire environment that a freely moving animal has passed through\citep{Rowland2016}. In addition, the grid cells widely exist in many kinds of animals, including rat, mice\citep{Fyhn2008}, bats\citep{Yartsev2011}, monkey\citep{Killian2012} and human\citep{Jacobs2013,Kunz2015,Doeller2010}. This shows that the grid cells widely exist in mEC as an important role in the cognitive map of rodent animals. Since the discovery of the grid cells, the function of them in cognitive map keep drawing attention to researchers all the time. One crucial problem of grid cells is the reason how the hexagonal firing patterns are formed. To explain it, many computational models are proposed. Current main computational models contain oscillatory-interference (OI) models, Continuous attractor network (CAN) models and single-cell plasticity models.
 
 
+Oscillatory-interference(OI) models of grid cells are proposed in the early 1990s to explain the origin of place field and their relationship with the hippocampal theta rththm\citep{OKeefe2005,Burgess2007,Hasselmo2007,Pastoll2013,Burgess2008}. The dual-oscillator model can explain the emergence of place fields and phase procession\citep{OKeefe2005}. At the same time, it also can intrinsically generate periodic patterns. So it was used to try to explain the periodic firing fields of grid cells\citep{DAlbis2018}. In this models, the periodic patterns are generated by interfering with multiple oscillators that have different frequencies. These oscillators with different frequencies are modulated by the moving speed and direction of the animals. So such oscillators are called velocity-controlled oscillators(VCO). By this, only two VCOs are enough to generate grid-like patterns. Although the OI models have been supported by some researches\citep{Schmidt-Hieber2013,Domnisoru2013,Welday2011,Koenig2011,Brandon2011,Giocomo2007,Hafting2005,Alonso1989}, there are still some problem for OI theory. An problem of OI models is the 60 degree angle between multiple VCOs needs to be specified manually. Additionally, The grid-like patterns of OI models can be rapidly disrupted by noise\citep{DAlbis2018}. Some experimental evidence also against OI models. Giocomo et al demonstrates that the intrinsic resonance is not required for grid patterns to form\citep{Giocomo2011}. The grid-like activity is observed without theta modulation in crawling bats.\citep{Yartsev2011}. And the membrane-potential dynamics of grid cells is inconsistent with a purely interference-based mechanism\citep{Domnisoru2013}. These evidence shows that the OI models may not be latent mechanism of grid-cell activity\citep{Moser2017}.
+
+The single-cell plasticity models more emphasize the role of external sensory cues and learning process compared with other grid-cell models\citep{DAlbis2018}. The simplest single-cell plasticity model is proposed by Kropff and Treves\citep{Kropff2008}. They think the grid-cell firing patterns are formed by synaptic excitation and neural intrinsic competition. The competition could arise from the spike-rate adaptation. Then the Hebbian rules are utilized to imprint the synaptic connection in the output activity of the cell. The preferred spacing of grid cells are controlled by the time constant of spike-rate adaptation and the average running speed of the animal. The single-cell plasticity models leverage the inherent single-cell mechanism to explain the hexagonal firing patterns. However, the Kropff- Treves model CANot explain the common alignment within grid-cell modules\citep{Hafting2005,Fyhn2008,Stensola2012}. The later models try to add the recurrent collaterals and head-direction tuning\citep{Kropff2008,Si2012} to give the desired network properties. In summary, the head-direction tuning is required for grid alignment during the development of grid patterns\citep{Rowland2016}.  
+
+The CAN models are another type of very influential models in the field of computational neuroscience. The fundamental premise of such models is that a correctly designed recurrent network may sustain a continuous stable states in its neurons activity\citep{Taylor1999,Amari1977}. Multiple CAN models of grid cells have been proposed to explain the grid-like patterns\citep{Fuhs2006,Burak2009,Guanella2007,Shipston-Sharman2016,Couey2013}. They can roughly divided into two types including single-bump CANs and multiple-bump CANs. In the single-bump CANs, the networks only exist a bump at the same time\citep{Guanella2007}. The neurons in the networks are arranged using the preferred spacing and orientation of the grid cell. However, in multiple-bump CANs, there are multiple bumps of activity in the CAN of grid cells by the weight profile of Mexican-hat or Lincoln-hat\citep{Rowland2016}. Then the bumps in networks can be driven by self-motion cues. Rodents can utilize self-motion cues to navigate across short distances, which is consistent with the features of the CAN. And CAN have been witnessed to be in line with the modular organization of grid cell activity\citep{Stensola2012,Yoon2013}. The CAN models have been widely applied to multiple recognized cells in the entorhinal–hippocampal neuronal circuits, such as head direction cells and place cells. In addition, the CAN models is naturally suitable to process the path integration in cognitive map. So in the research area of cognitive map and robot navigation, the CAN models acquire more attention. However, to generate the hexagonal firing patterns, current CAN models of grid cells have obvious artifacts. For example, In \citep{Guanella2007}, the neurons in CAN are manually organized in a plane covering the repetitive rectangular structure to generate the hexagonal firing patterns. Additionally, in \citep{Guanella2007}, the CAN models of grid cells receive the input from the CAN models of place cells connecting by the Hebbian rules.
+
+%Nevertheless, these are some weakness in CAN models. The CAN models require a complex neural network architecture. But this architecture has an unknown development genesis. Additionally, they require anchoring to the physical and are unable to describe how environmental geometry and sensory input alter grid fields\citep{DAlbis2017}.
+
+As mentioned above, many computational models of grid cells are proposed to explain the grid patterns of individual grid cell. However, evidence have shown that grid-cell activity was discovered to be structured into a small number of distinct functional modules\citep{Stensola2012}. A recent research shows that grid-cell activity from a single module is distributed on a toroidal manifold, as expected in a two-dimensional CAN\citep{Gardner2022}. The current CAN models\citep{Fuhs2006,Burak2009,Guanella2007} of individual grid cells in the research are used to predict the activity of grid cells. It is consistent with the experimental data of grid cells to some extent. But current CAN models are designed for single grid cell. So there are some inconsistent between prediction of models and experimental data. The research demonstrates that the individual cells are preferentially active at singular position on the torus and the position on the torus correspond to position of the moving animal in the physical space\citep{Gardner2022}. However, for multiple-bump CAN models, the neurons are activated at the same time in several position on the torus. For single-bump CAN models, the neurons are ordered hexagonally and can not map animal's positions in the environment. So here, we focus on individual grid-cell module and propose a new CAN models for the grid-cell module. Because in a single module, all grid cells have same spacing and orientation\citep{Stensola2012}. So in our model of grid cells, the neurons that represented grid cells are arranged in a plane according to their own phases and formed 2D toroidal manifolds. So our CAN model is marked as PhaseCAN. In this way, the structure of the PhaseCAN is established like the CAN models of place cells\citep{McNaughton2006}. This improves the overall network structure's naturalness comparing with the CAN of grid-cell model\citep{Guanella2007}. In addition, we build a direct connection between place cell and grid-cell module using the spatial transformation. By this connection, the deviation of path integration can be corrected in the CAN model of grid cells based on phases. Then the activity of single grid cell in the CAN is recorded and shows the hexagonal firing patterns. It is  consistent with the biological experiment about single grid-cell activity\citep{Hafting2005}. Finally, the performance of the path integration using our model is evaluated in different spacing, sizes of network, moving steps. The results demonstrate that our model performs very well across extended distances and without external cues. In addition, our model also supports the hypothesis about the activity of single grid-cell module\citep{Gardner2022}.
 
 
-Although so, the latent mechanisms how to form the grid-like patterns still remain a mystery\citep{DAlbis2017}.
+%
+%Although many models mentioned above have been proposed to explain the grid patterns of grid cells, the latent mechanism of grid cells still be vague. For every kind of models, there is some supported and against evidence. The CAN models have been widely applied to multiple recognized cells in the entorhinal–hippocampal neuronal circuits, such as head direction cells and place cells. In addition, the CAN models is naturally suitable to process the path integration in cognitive map. So in the research area of cognitive map and robot navigation, the CAN models acquire more attention. However, current CAN models of grid cells try to take consideration all properties of grid cells. This make current models have some obvious artifacts. For example, In \citep{Guanella2007}, the neurons in CAN are manually organized in a plane covering the repetitive rectangular structure to generate the hexagonal firing patterns. Additionally, in \citep{Guanella2007}, the CAN models of grid cells receive the input from the CAN models of place cells connecting by the Hebbian rules. But this can not make the CAN models of grid cells anchor to the physical world\citep{DAlbis2017}.
 
-
-Oscillatory-interference(OI) models of grid cells are proposed in the early 1990s to explain the origin of place field and their relationship with the hippocampal theta rththm\citep{OKeefe2005,Burgess2007,Hasselmo2007,Pastoll2013,Burgess2008}. The dual-oscillator model can explain the emergence of place fields and phase procession\citep{OKeefe2005}. At the same time, it also can intrinsically generate periodic patterns. So it was used to try to explain the periodic firing fields of grid cells\citep{DAlbis2018}. In this models, the periodic patterns are generated by interfering with multiple oscillators that have different frequencies. These oscillators with different frequencies are modulated by the moving speed and direction of the animals. So such oscillators are called velocity-controlled oscillators(VCO). By this, only two VCOs are enough to generate grid-like patterns. 
-Although the OI models have been supported by some researches\citep{Schmidt-Hieber2013,Domnisoru2013,Welday2011,Koenig2011,Brandon2011,Giocomo2007,Hafting2005,Alonso1989}, there are still some problem for OI theory. An problem of OI models is the 60 degree angle between multiple VCOs needs to be specified manually. Additionally, The grid-like patterns of OI models can be rapidly disrupted by noise\citep{DAlbis2018}.
-
-
-The CANN models are a type of very influential model in the field of computational neuroscience. The fundamental premise of such models is that a correctly designed recurrent network may sustain a continuous stable states in its neurons activity\citep{Taylor1999,Amari1977}. Multiple CANN models of grid cells have been proposed to explain the grid-like patterns\citep{Fuhs2006,Burak2009,Guanella2007,Shipston-Sharman2016,Couey2013}. In these models, there are multiple bumps of activity in the CANN of grid cells by the weight profile of Mexican-hat or Lincoln-hat\citep{Rowland2016}. Then the bumps in networks can be driven by self-motion cues. Rodents can utilize self-motion cues to navigate across short distances, which is consistent with the feature of the CANN. And CANN have been witnessed to be in line with the modular organization of grid cell activity\citep{Stensola2012,Yoon2013}. Nevertheless, these are some weakness in CAN models. The CANN models require a complex neural network architecture. But this architecture has an unknown development genesis. Additionally, they require anchoring to the physical and are unable to describe how environmental geometry and sensory input alter grid fields\citep{DAlbis2017}.
-
-Although many models mentioned above have been proposed to explain the grid-like firing field of grid cells, the latent mechanism of grid cells still be vague. For every kind of models, there is some supported and against evidence. The CANN models have been widely applied to multiple recognized cells in the entorhinal–hippocampal neuronal circuits, such as head direction cells and place cells. In addition, the CANN models is naturally suitable to process the path integration in cognitive map. So in the research area of cognitive map and robot navigation, the CANN models acquire more attention. However, current CANN models of grid cells try to take consideration all properties of grid cells. This make current models have some obvious artifacts. For example, In \citep{Guanella2007}, the neurons in CANN are manually organized in a plane covering the repetitive rectangular structure to generate the hexagonal firing patterns. Additionally, in \citep{Guanella2007}, the CANN models of grid cells receive the input from the CANN models of place cells connecting by the Hebbian rules. But this can not make the CANN models of grid cells anchor to the physical world\citep{DAlbis2017}.
-
-In addition, current models focus more on single grid-cell activity. But grid-cell activity was discovered to be usually structured into a small number of distinct functional modules. So in here, we focus on a grid-cell module and proposed a new CANN models for the grid-cell module. Because in a single module, all grid cells have same spacing and orientation\citep{Stensola2012}. So in our model of grid cells, the neurons that represented grid cells are arranged in a plane according to their own phases. So our CANN model is marked as PhaseCANN. In this way, the structure of the PhaseCANN is established like the CANN models of place cells\citep{McNaughton2006}. This improves the overall network structure's naturalness comparing with the CANN of grid-cell model\citep{Guanella2007}. In addition, we build a direct connection between place cell and grid-cell module using the spatial transformation. By this connection, the deviation of path integration can be corrected in the CANN model of grid cells based on phase. Then the single grid-cell activity, the activity of grid-cell module based on our model are recorded. They are consistent with the biological experiment about single grid-cell activity\citep{Hafting2005}. Finally, the performance of the path integration using our model is evaluated in different spacing, sizes of network, moving steps. The results demonstrate that our model performs very well across extended distances and without external cues.
+%In addition, current models focus more on single grid-cell activity. But grid-cell activity was discovered to be usually structured into a small number of distinct functional modules. So in here, we focus on a grid-cell module and proposed a new CAN models for the grid-cell module. Because in a single module, all grid cells have same spacing and orientation\citep{Stensola2012}. So in our model of grid cells, the neurons that represented grid cells are arranged in a plane according to their own phases. So our CAN model is marked as PhaseCAN. In this way, the structure of the PhaseCAN is established like the CAN models of place cells\citep{McNaughton2006}. This improves the overall network structure's naturalness comparing with the CAN of grid-cell model\citep{Guanella2007}. In addition, we build a direct connection between place cell and grid-cell module using the spatial transformation. By this connection, the deviation of path integration can be corrected in the CAN model of grid cells based on phase. Then the single grid-cell activity, the activity of grid-cell module based on our model are recorded. They are consistent with the biological experiment about single grid-cell activity\citep{Hafting2005}. Finally, the performance of the path integration using our model is evaluated in different spacing, sizes of network, moving steps. The results demonstrate that our model performs very well across extended distances and without external cues.
 
 
 \section{Results}
@@ -213,20 +214,20 @@ In addition, current models focus more on single grid-cell activity. But grid-ce
 	\subfigure[]{
 		\includegraphics[width=0.45\linewidth]{Figure/2D_structure.png}
 		%\caption{fig1}
-		\label{fig:cann_structure_a}
+		\label{fig:can_structure_a}
 	}
 	\hspace{-2pt}	
 	\subfigure[]{
 		\includegraphics[width=0.45\linewidth]{Figure/3D_structure.png}
-		\label{fig:cann_structure_b}
+		\label{fig:can_structure_b}
 	}
 
-	\caption{The phase cann structure}
-	\label{fig:cann_structure}
+	\caption{The phase CAN structure}
+	\label{fig:can_structure}
 \end{figure*}
 
 
-In the reference \citep{Stensola2012}, it shows that grid cells form discrete modules. And each grid module shares a common spacing, orientation\citep{Rowland2016}. Previous models of grid cells more focus on explaining the firing patterns of a single grid cell. In here, we concentrate on single grid module and explore its firing mechanism. As Fig.~\ref{fig:cann_structure_a} depicted, in our model, the neurons of grid cells in same module are arranged in a sheet. In this sheet, the population neurons are defined as follows:
+In the reference \citep{Stensola2012}, it shows that grid cells form discrete modules. And each grid module shares a common spacing, orientation\citep{Rowland2016}. Previous models of grid cells more focus on explaining the firing patterns of a single grid cell. Here, we concentrate on single grid-cell module and explore its firing mechanism. As Fig.~\ref{fig:can_structure_a} depicted, in our model, the neurons of grid cells in same module are arranged in a sheet. In this sheet, the population neurons are defined as follows:
 \begin{equation}
 	M = N_x \times N_y
 \end{equation}
@@ -247,25 +248,25 @@ For the grid cells in a module, they share common spacing and orientation. So th
 	\bm{G_i} = [s,o,\bm{\vartheta_i}], i\in \bm{Z^+}
 \end{equation}
 
-A grid cell $\bm{G_i}$ in a module can be placed in the sheet according to its phases. Different from the CANN model in the reference\citep{Guanella2007}, all neurons $\epsilon_{xy}$ in our model are arranged as a matrix instead of repetitive rectangular structure. According to the phases of the grid cell $\bm{G_i}$, the index $(x,y)$ of a neuron $\epsilon_{xy}$ in the matrix can be described as follows:
+A grid cell $\bm{G_i}$ in a module can be placed in the sheet according to its phases. Different from the CAN model in the reference\citep{Guanella2007}, all neurons $\epsilon_{xy}$ in our model are arranged as a matrix instead of repetitive rectangular structure. According to the phases of the grid cell $\bm{G_i}$, the index $(x,y)$ of a neuron $\epsilon_{xy}$ in the matrix can be described as follows:
 
 \begin{numcases}{}
 	x = \frac{\vartheta_i^1}{\Delta \vartheta^1}\\
 	y = \frac{\vartheta_i^2}{\Delta \vartheta^2}
 \end{numcases}
-where $\Delta \vartheta$ is the phase gap of neighbor neurons, $\vartheta_i^1$ and $\vartheta_i^2$ are the phases of $\bm{G_i}$. As Fig.~\ref{fig:cann_structure_a} depicted, the neurons in our model are connected recurrently and have the periodic boundary condition. So the max phase of the neurons in the model is equal to the spacing of the grid module. Then $\Delta \vartheta$ can be further calculated as follows:
+where $\Delta \vartheta$ is the phase gap of neighbor neurons, $\vartheta_i^1$ and $\vartheta_i^2$ are the phases of $\bm{G_i}$. As Fig.~\ref{fig:can_structure_a} depicted, the neurons in our model are connected recurrently and have the periodic boundary condition. So the max phase of the neurons in the model is equal to the spacing of the grid module. Then $\Delta \vartheta$ can be further calculated as follows:
 \begin{equation}
 	\Delta \vartheta = \frac{s}{N}
 \end{equation}
-where $s$ is the spacing of the grid-cell module, $N$ is the size of the CANN model.
+where $s$ is the spacing of the grid-cell module, $N$ is the size of the CAN model.
 \subsection{The connection of proposed model}\label{subsection:connection}
 \begin{figure}[!t]
 	\centering
 	\includegraphics[width=0.8\linewidth]{Figure/weight_profile.png}
-	\caption{The weight profile of the PhaseCANN. The weight profile of the PhaseCANN consists of two part. One part is the excitatory weight to activate the local neurons. The another part is the inhibition part and it inhibit distant neurons. The two part is used to compute the weight profile of the PhaseCANN by Eq.~\eqref{eq:weight_gc}. }	
+	\caption{The weight profile of the PhaseCAN. The weight profile of the PhaseCAN consists of two part. One part is the excitatory weight to activate the local neurons. The another part is the inhibition part and it inhibit distant neurons. The two part is used to compute the weight profile of the PhaseCAN by Eq.~\eqref{eq:weight_gc}. }	
 	\label{fig:weight_profile}
 \end{figure}
-As mentioned above, the grid cells neurons in identical module are arranged in a sheet. They are connected with each other and have periodic boundary condition. This is depicted in Fig.~\ref{fig:cann_structure}. For these grid cells that have same spacing and orientation in identical module according to \citep{Burak2009}, the dynamic of rate-based neurons can be described by:
+As mentioned above, the grid cells neurons in identical module are arranged in a sheet. They are connected with each other and have periodic boundary condition. This is depicted in Fig.~\ref{fig:can_structure}. For these grid cells that have same spacing and orientation in identical module according to \citep{Burak2009}, the dynamic of rate-based neurons can be described by:
 \begin{equation}\label{eq:firing_rate}
 	\tau \frac{d r_{i}}{d t}+r_{i}=f\left[\sum_{j} w_{i j} r_{j}\right]
 \end{equation}
@@ -288,12 +289,12 @@ where $w_{ij}$ is the weight from $\epsilon_{j}$ to $\epsilon_{i}$, $\alpha,\rho
 
 \subsection{Activity and stabilization}
 
-Place cells have been considered to provided the input for grid cells. The experiment that recorded the neural activity in the medial entorhinal cortex(MEC) of rat after temporary inactivation of the hippocampus shows that grid cells will lost their grid-like firing patterns and tune to the direction of the rat's head\citep{Bonnevie2013}. To make gird cells acquire the input from the place cells, the CANN of place cells\citep{McNaughton2006} is used to inject the activity to the PhaseCANN. As depicted in Fig.~\ref{fig:w2p2g}, for a landmark in the true world, it can be mapping to a neuron activity in the place cell sheet. \pt{According to our previous work}, a landmark $P^w_i$ was firstly transformed into place cell firing space by:
+Place cells have been considered to provided the input for grid cells. The experiment that recorded the neural activity in the medial entorhinal cortex(MEC) of rat after temporary inactivation of the hippocampus shows that grid cells will lost their grid-like firing patterns and tune to the direction of the rat's head\citep{Bonnevie2013}. To make gird cells acquire the input from the place cells, the CAN of place cells\citep{McNaughton2006} is used to inject the activity to the PhaseCAN. As depicted in Fig.~\ref{fig:w2p2g}, for a landmark in the true world, it can be mapping to a neuron activity in the place cell sheet. \pt{According to our previous work}, a landmark $P^w_i$ was firstly transformed into place cell firing space by:
 
 \begin{figure*}[!t]
 	\centering
 	\includegraphics[width=0.8\linewidth]{Figure/w-p-g.png}
-	\caption{The grid cell module receives excitation from external cues. In the top of the figure, the rat moves in the actual world. The place cell CANN network and grid cell module are driving by the velocity and the head direction from the speed cells and head direction cell of the rat. When the rat receive the excitation from landmark, the bump position of the place cell network will be used to activate the grid cell module by the Eq.~\eqref{eq:cal_rate} and Eq.~\eqref{eq:cal_position}.}
+	\caption{The grid cell module receives excitation from external cues. In the top of the figure, the rat moves in the actual world. The place cell CAN network and grid cell module are driving by the velocity and the head direction from the speed cells and head direction cell of the rat. When the rat receive the excitation from landmark, the bump position of the place cell network will be used to activate the grid cell module by the Eq.~\eqref{eq:cal_rate} and Eq.~\eqref{eq:cal_position}.}
 	\label{fig:w2p2g}
 \end{figure*}
 
@@ -308,11 +309,11 @@ where $\boldsymbol{R_{wp}}$ and $\boldsymbol{\varpi}$ are the rotation matrix an
 		sin\phi& cos\phi
 	\end{bmatrix}^{-1}
 \end{equation}
-This can inject energy for place cell CANN model. Then the excitation can be updated according to the weights between place cells neurons in the sheet\citep{McNaughton2006c}. After the process of competitive attractor network dynamics, the network of place cells gradually is stabilized. Then the neuron that have maximum firing rate is found and marked as $\boldsymbol{P^p_\text{max}}$. It will be transform into grid cells firing space by:
+This can inject energy for place cell CAN model. Then the excitation can be updated according to the weights between place cells neurons in the sheet\citep{McNaughton2006c}. After the process of competitive attractor network dynamics, the network of place cells gradually is stabilized. Then the neuron that have maximum firing rate is found and marked as $\boldsymbol{P^p_\text{max}}$. It will be transform into grid cells firing space by:
 \begin{align}\label{eq:cal_position}
 	\bm{P^g_i} &= \bm{R_{pg}}\cdot \bm{P^p_\text{max}} 
 \end{align}
-where $\boldsymbol{P^g_i}$ is the corresponding neuron position in the PhaseCANN, $\boldsymbol{R_{pg}}$ is the transformation matrix and it can be depicted as follows:
+where $\boldsymbol{P^g_i}$ is the corresponding neuron position in the PhaseCAN, $\boldsymbol{R_{pg}}$ is the transformation matrix and it can be depicted as follows:
 \begin{align}
 	\boldsymbol{R_{pg}} =
 	\begin{bmatrix}
@@ -326,26 +327,26 @@ where $s$ and $o$ separately is the spacing and orientation of the grid cell mod
 \end{equation}
 where $\varsigma_i$ is the firing rate of $\bm{P^g_i}$, $M$ is the neural population of the place cell network, $\mathcal{T}_{ik}$ is the weight profile that is learned by Hebbian rule, $\mathcal{F}(\cdot)$ is the function to acquire the firing rate of $\bm{P^p_k}$ in the place cell network.
 
-In this way, the PhaseCANN can acquire excitation from the external cues. So the firing rate of single neuron in the Eq.~\eqref{eq:firing_rate} can be further described as follows:
+In this way, the PhaseCAN can acquire excitation from the external cues. So the firing rate of single neuron in the Eq.~\eqref{eq:firing_rate} can be further described as follows:
 \begin{equation}\label{eq:firing_rate_modify}
 	\tau \frac{d r_{i}}{d t}+r_{i}=f\left[\sum_{j} w_{i j} r_{j} + Q_i\right]
 \end{equation}
-where $Q_i$ is the feedforward input to neuron $i$ from external cues. After receiving the external excitation, the PhaseCANN need to process the excitatory update. A two-dimension discrete Gaussian distribution is used to generate the excitatory weight matrix, $w_{ij}$, which is depicted in Eq.~\eqref{eq:weight_gc}. Then each neuron uses it to project activity to all other neuron in the PhaseCANN.
+where $Q_i$ is the feedforward input to neuron $i$ from external cues. After receiving the external excitation, the PhaseCAN need to process the excitatory update. A two-dimension discrete Gaussian distribution is used to generate the excitatory weight matrix, $w_{ij}$, which is depicted in Eq.~\eqref{eq:weight_gc}. Then each neuron uses it to project activity to all other neuron in the PhaseCAN.
 
-Finally, the PhaseCANN is normalized to constrain the sum of activation in whole network. Before normalization, the firing rate of each neuron need to be maintained a scope by Heaviside function. Then the normalization process can be described as follows:
+Finally, the PhaseCAN is normalized to constrain the sum of activation in whole network. Before normalization, the firing rate of each neuron need to be maintained a scope by Heaviside function. Then the normalization process can be described as follows:
 \begin{equation}\label{eq:normalization}
 	\tilde{\varsigma_i} = \frac{\varsigma_i}{\sum_{j=1}^{N} \varsigma_j}
 \end{equation}
-where $\tilde{\varsigma_i}$ is the firing rate after normalization, $N$ is the neuron population of PhaseCANN.
+where $\tilde{\varsigma_i}$ is the firing rate after normalization, $N$ is the neuron population of PhaseCAN.
 
 % TODO: \usepackage{graphicx} required
 
 
-To verify the ability of receiving the excitation of the network, a PhaseCANN was established according to \ref{subsection:structure} and \ref{subsection:connection}. The parameters of the network mentioned are listed in Tab.\ref{tab:model_parameter}.
+To verify the ability of receiving the excitation of the network, a PhaseCAN was established according to \ref{subsection:structure} and \ref{subsection:connection}. The parameters of the network mentioned are listed in Tab.\ref{tab:model_parameter}.
 
 \begin{table*}[h]
 	\centering
-	\caption{The parameters of the PhaseCANN}
+	\caption{The parameters of the PhaseCAN}
 	\label{tab:model_parameter}
 	\begin{tabular}{c c c c c c c c c }		
 		\toprule
@@ -388,7 +389,7 @@ In addition, comparing the Fig.~\ref{fig:show_excitation_b} and Fig.~\ref{fig:sh
 
 \subsection{Path integration}
 
-For the CANN models, the path integration is a important ability comparing with other models of grid cells. The path integration process updates the network activity by shifting the activated bump based on the velocities and head direction angles from speed cell\citep{Kropff2015} and head direction cell\citep{Zhang1996,Taube1990}. In general, the path integration in CANN models is performed by projecting existing neural bump to the future location and dynamically shifting the current activity to towards the future location. Another method of the path integration shifting existing neural bump rather than projecting a copy of the current activity. This approach makes the performance of the robot independent of varying sensory update rates and robot velocity, resulting in more precise robot trajectories and eliminating the need for parameter adjustment\citep{Milford2008d}. In here, the latter method was chosen to process the path integration. However, different with \citep{Milford2008d}, in here, the translation in the world frame needs to be transformed into PhaseCANN and the computation of firing rate is performed using the convolution kernel.
+For the CAN models, the path integration is a important ability comparing with other models of grid cells. The path integration process updates the network activity by shifting the activated bump based on the velocities and head direction angles from speed cell\citep{Kropff2015} and head direction cell\citep{Zhang1996,Taube1990}. In general, the path integration in CAN models is performed by projecting existing neural bump to the future location and dynamically shifting the current activity to towards the future location. Another method of the path integration shifting existing neural bump rather than projecting a copy of the current activity. This approach makes the performance of the robot independent of varying sensory update rates and robot velocity, resulting in more precise robot trajectories and eliminating the need for parameter adjustment\citep{Milford2008d}. Here, the latter method was chosen to process the path integration. However, different with \citep{Milford2008d}, in here, the translation in the world frame needs to be transformed into PhaseCAN and the computation of firing rate is performed using the convolution kernel.
 
 After the rat move a distance per unit time, the offsets can be calculated as follows:
 \begin{equation}\label{eq:offsets}
@@ -400,13 +401,13 @@ After the rat move a distance per unit time, the offsets can be calculated as fo
 
 where $\Delta x^w_i$ and $\Delta y^w_i$ are the translation of two directions in the world frame, $\bm{v}(t)$ and $\alpha(t)$ are the translation velocity and head direction separately.
 
-Then the translation in the world frame can be transformed into PhaseCANN by:
+Then the translation in the world frame can be transformed into PhaseCAN by:
 \begin{align}\label{eq:trans_w2g}	
 	[\Delta x^g_i,\Delta y^g_i]^T &= \bm{R_{pg}}\cdot \bm{R_{wp}} [\Delta x^w_i,\Delta y^w_i]^T 
 \end{align}
-where $\Delta x^g_i$ and $\Delta y^g_i$ are the offsets in the PhaseCANN.
+where $\Delta x^g_i$ and $\Delta y^g_i$ are the offsets in the PhaseCAN.
 
-For a neuron $\epsilon_{xy}$ in $(x,y)$ of the PhaseCANN, its firing rate $\varsigma_{xy}$ can be update by the path integration as follows:
+For a neuron $\epsilon_{xy}$ in $(x,y)$ of the PhaseCAN, its firing rate $\varsigma_{xy}$ can be update by the path integration as follows:
 \begin{equation}\label{rate_path_integration}
 	\varsigma_{xy}' = \sum_{a=\delta x_o }^{\delta x_o +1}\sum_{b=\delta y_o}^{\delta y_o +1} \eta_{ab} \varsigma_{(x+a)(y+b)}
 \end{equation}
@@ -414,7 +415,7 @@ where $\eta_{ab}$ is a $2\times2$ convolution kernel to compute the firing rate 
 \begin{equation}\label{convolution_kernel}
 	\eta_{ab} = \frac{\sqrt{(a-\Delta x_i^g)^2+(b-\Delta y_i^g)^2}}{\sum_{a=\delta x_o }^{\delta x_o +1}\sum_{b=\delta y_o}^{\delta y_o +1}\sqrt{(a-\Delta x_i^g)^2+(b-\Delta y_i^g)^2}}
 \end{equation}
-where $\delta x_o,\delta y_o $ are the rounded down integer offsets in the $x$ and $y$ directions of the PhaseCANN, they can be calculate as follows:
+where $\delta x_o,\delta y_o $ are the rounded down integer offsets in the $x$ and $y$ directions of the PhaseCAN, they can be calculate as follows:
 \begin{equation}\label{rounded-offsets}
 	\begin{bmatrix}
 		\delta x_o\\
@@ -489,7 +490,7 @@ A virtual path is generated in a $5\times5$ square virtual environment to simula
 	\label{fig:drive_bump}
 \end{figure*}
 
-In per time step, the offsets are calculated by Eq.~\eqref{eq:offsets}. Then the firing rate of every neuron in the PhaseCANN can be updated by Eq.~\eqref{eq:trans_w2g}-\eqref{rounded-offsets}. The several snapshots of the network status during this process are depicted in Fig.~\ref{fig:drive_bump}. The excitatory bump continuously move in the network sheet. This demonstrates PhaseCANN can maintain the stability and perform the path integration. When the bump reach to the edges of the network sheet depicted in the Fig.~\ref{fig:drive_bump_e} and Fig.~\ref{fig:drive_bump_f},the bump will appear in opposite edge because of the periodic boundary condition.
+In per time step, the offsets are calculated by Eq.~\eqref{eq:offsets}. Then the firing rate of every neuron in the PhaseCAN can be updated by Eq.~\eqref{eq:trans_w2g}-\eqref{rounded-offsets}. The several snapshots of the network status during this process are depicted in Fig.~\ref{fig:drive_bump}. The excitatory bump continuously move in the network sheet. This demonstrates PhaseCAN can maintain the stability and perform the path integration. When the bump reach to the edges of the network sheet depicted in the Fig.~\ref{fig:drive_bump_e} and Fig.~\ref{fig:drive_bump_f},the bump will appear in opposite edge because of the periodic boundary condition.
 
 To show the activity of single grid cell in the module, three neurons in the network are chosen to record their activity during the path integration. In addition, the parameters of network set up are similar to the  Table.\ref{tab:model_parameter}. But the spacing of grid cell module is set to $1.20$ in here. When the bump move through these neurons, the neurons acquire excitatory condition. By this way, the firing patterns of single grid cell are recorded depicted in the Fig.~\ref{fig:single_neuron_firing}. The Figure shows that the firing patterns of single grid cell approximately are hexagonal. This is consistent with the properties of grid cells and experiment results\citep{Hafting2005}.
 
@@ -511,11 +512,11 @@ To show the activity of single grid cell in the module, three neurons in the net
 		\includegraphics[width=0.33\linewidth]{Figure/single_neuron_firing_3.png}
 		\label{fig:single_neuron_firing_c}		
 	}
-	\caption{The firing patterns of the single grid cell in the different position of the PhaseCANN. The black lines in the three figures are the paths that are generated in the virtual environment. The red points represents the firing condition of single neuron. (a) The firing pattern of the neuron in the position $(15,15)$ of the network. (b) The firing pattern of the neuron in the position $(45,75)$ of the network. (c) The firing pattern of the neuron in the position $(65,25)$ of the network.}
+	\caption{The firing patterns of the single grid cell in the different position of the PhaseCAN. The black lines in the three figures are the paths that are generated in the virtual environment. The red points represents the firing condition of single neuron. (a) The firing pattern of the neuron in the position $(15,15)$ of the network. (b) The firing pattern of the neuron in the position $(45,75)$ of the network. (c) The firing pattern of the neuron in the position $(65,25)$ of the network.}
 	\label{fig:single_neuron_firing}
 \end{figure*}
 
-To further demonstrate the activities of single neuron in different grid cell module, we establish nine PhaseCANN with different spacing and orientation. Then the firing activities in same position of these networks are recorded with driving the networks using the moving path mentioned above. The results are shown in Fig.~\ref{fig:single_neuron_firing_diff_prop}. Comparing the figures from left to right, the firing patterns are rotated with increasing orientation of the grid cell. In addition, the change of interval is consistent with the increasing spacing of the grid cell module. This demonstrates our proposed model can be applied in different properties of grid cells. In previous researches\citep{Bush2015,Edvardsen2020}, the gird-like patterns are used as accurate path integration. In here, the grid-like patterns are generated. But the patterns are obviously irregular and snatchy. Although the patterns generated are consistent with the observation of the biological experiment\citep{Hafting2005}, they are hard to use as a accurate path integration. According to our concept, path integration should be performed using a single grid cell module rather than a single grid cell.
+To further demonstrate the activities of single neuron in different grid cell module, we establish nine PhaseCAN with different spacing and orientation. Then the firing activities in same position of these networks are recorded with driving the networks using the moving path mentioned above. The results are shown in Fig.~\ref{fig:single_neuron_firing_diff_prop}. Comparing the figures from left to right, the firing patterns are rotated with increasing orientation of the grid cell. In addition, the change of interval is consistent with the increasing spacing of the grid cell module. This demonstrates our proposed model can be applied in different properties of grid cells. In previous researches\citep{Bush2015,Edvardsen2020}, the gird-like patterns are used as accurate path integration. In here, the grid-like patterns are generated. But the patterns are obviously irregular and snatchy. Although the patterns generated are consistent with the observation of the biological experiment\citep{Hafting2005}, they are hard to use as a accurate path integration. According to our concept, path integration should be performed using a single grid cell module rather than a single grid cell.
 
 
 \begin{figure*}[!t]
@@ -572,18 +573,18 @@ To further demonstrate the activities of single neuron in different grid cell mo
 	\includegraphics[width=0.33\linewidth]{Figure/single_neuron_firing_1.5_0.79.png}
 	\label{fig:single_neuron_firing_diff_prop_i}		
 }
-	\caption{The firing patterns of the single grid cell in the different module but in same position of the PhaseCANN. }
+	\caption{The firing patterns of the single grid cell in the different module but in same position of the PhaseCAN. }
 	\label{fig:single_neuron_firing_diff_prop}
 	\vspace{-2pt}
 \end{figure*}
 
 
-To verify the ability of our model to perform path integration, several experiments are designed. We compare the performance of different PhaseCANN models that have different spacing of grid cell and different size of network in the Eq.~\eqref{eq:network_size}. The results of experiment are shown in Fig.~\ref{fig:path_integration}. In general, the error of path integration gradually increases with moving steps. For different spacing of grid cells, the error of bigger spacing is more obvious than the smaller in Fig.~\ref{fig:path_integration_a}. In addition, the size of network also influence the 
+To verify the ability of our model to perform path integration, several experiments are designed. We compare the performance of different PhaseCAN models that have different spacing of grid cell and different size of network in the Eq.~\eqref{eq:network_size}. The results of experiment are shown in Fig.~\ref{fig:path_integration}. In general, the error of path integration gradually increases with moving steps. For different spacing of grid cells, the error of bigger spacing is more obvious than the smaller in Fig.~\ref{fig:path_integration_a}. In addition, the size of network also influence the 
 deviation of path integration. The more neurons in the network can acquire the lower error of path integration in general. In here, the precise $\mathcal{J}$of path integration can be described as follows:
 \begin{equation}\label{eq:relation_precise}
 	\mathcal{J} \varpropto \frac{1}{s/N} = \frac{1}{\varrho}
 \end{equation}
-where $s$ represents the spacing of grid cells, $N$ is the size of the network, $\varrho$ is the ratio of $s$ and $N$ marked as network resolution ratio of CANN. According to the results of experiment depicted in Fig.~\ref{fig:path_integration}, we infer that the precise of path integration is proportional to the network resolution ratio $\varrho$. 
+where $s$ represents the spacing of grid cells, $N$ is the size of the network, $\varrho$ is the ratio of $s$ and $N$ marked as network resolution ratio of CAN. According to the results of experiment depicted in Fig.~\ref{fig:path_integration}, we infer that the precise of path integration is proportional to the network resolution ratio $\varrho$. 
 
 \begin{figure*}[!t]
 %	\subfigcapskip=-10pt %调整子图片与子标题的距离
@@ -600,11 +601,11 @@ where $s$ represents the spacing of grid cells, $N$ is the size of the network, 
 		\label{fig:path_integration_b}		
 	}
 	
-	\caption{The error of path integration using PhaseCANN with iterations. The x-axis is the moving steps. (a) The error of path integration using different spacing in the PhaseCANN but same size of network, i.e., $100$. (b) The error of path integration using different network sizes in the PhaseCANN but same spacing of grid cell, i.e., $2.0$. }
+	\caption{The error of path integration using PhaseCAN with iterations. The x-axis is the moving steps. (a) The error of path integration using different spacing in the PhaseCAN but same size of network, i.e., $100$. (b) The error of path integration using different network sizes in the PhaseCAN but same spacing of grid cell, i.e., $2.0$. }
 	\label{fig:path_integration}
 \end{figure*}
 
-In general, the error of path integration is accumulated with iteration. To eliminate the error, the visual cues are introduced and correct the deviation. In our model, as Fig.~\ref{fig:w2p2g} shown, the landmarks in the actual world are mapping to the network of place cells. Then the excitation in the place cell network is transformed and mapping to the firing space of grid cells. This can help the grid cell module to reduce the influence from accumulative error. In here, the excitation from place cell are injected into network of the grid cell module per $500$ steps. The error of path integration is recorded per $100$ steps to obviously show the difference between PhaseCANN model with and without feedback. This comparison is shown in Fig.~\ref{fig:path_integration_feedback}. during the initial process, their error all remains a low level. However, along the increasing steps, the PhaseCANN with feedback still can keep a low deviation. In contrast, the error of the PhaseCANN without feedback will increasingly increase.  The results manifest our model have the ability to reduce the accumulated error.
+In general, the error of path integration is accumulated with iteration. To eliminate the error, the visual cues are introduced and correct the deviation. In our model, as Fig.~\ref{fig:w2p2g} shown, the landmarks in the actual world are mapping to the network of place cells. Then the excitation in the place cell network is transformed and mapping to the firing space of grid cells. This can help the grid cell module to reduce the influence from accumulative error. In here, the excitation from place cell are injected into network of the grid cell module per $500$ steps. The error of path integration is recorded per $100$ steps to obviously show the difference between PhaseCAN model with and without feedback. This comparison is shown in Fig.~\ref{fig:path_integration_feedback}. during the initial process, their errors all remains a low level. However, along the increasing steps, the PhaseCAN with feedback still can keep a low deviation. In contrast, the error of the PhaseCAN without feedback will increasingly increase.  The results manifest our model have the ability to reduce the accumulated error.
 
 \begin{figure*}[!t]
 	%	\subfigcapskip=-10pt %调整子图片与子标题的距离
@@ -619,8 +620,23 @@ In general, the error of path integration is accumulated with iteration. To elim
 
 
 \section{Discussion}
-The rodent animals have outstanding navigation ability\citep{Ball2013}. They can walk a long way and return their dens. This demonstrates they have the splendid ability of path integration. However, the reason still be mysterious. The grid cells have draw enormous attention because of their properties. Specially, the periodic firing patterns of grid cells in the MEC can provide a compact  code for location within large-scale space\citep{Bush2015}. In addition, The general consensus is that grid cells provide a path integration input for place cells\citep{McNaughton2006}. In here, our model is used to perform the path integration in longer steps. This is depicted in Fig.~\ref{fig:path_integration_long}. In three different grid-cell modules, their error remains a scope even after $100000$ steps without feedback from place cells. This also can partly explains why the rodent animals can return their dens even though they have go for a very long distance. 
-\begin{figure*}[!t]
+The rodent animals have outstanding navigation ability\citep{Ball2013}. They can walk a long way and return their dens. This demonstrates they have the splendid ability of path integration. However, the latent mechanism of animals' navigation still be mysterious. The cognitive map is thought exists in the brain of animals\citep{Tolman1948}. It can provide a spatial representation for physical world to guide the animals. The discovery of place cells demonstrates the cognitive map may exist in the entorhinal-hippocampal circuitry\citep{OKeefe1978}. After that, many spatial cells are found in this areas including head direction cells, speed cells, grid cells and so on. Specially, the grid cells have draw enormous attention because of their hexagonal firing patterns. The periodic firing patterns of grid cells in the MEC are thought to provide a compact code for location within large-scale space\citep{Bush2015}. In addition, the general consensus is that grid cells provide a path integration input for place cells\citep{McNaughton2006}. So the grid cells are regarded as a key component for spatial representation in the entorhinal-hippocampal circuitry.
+
+To explore the latent mechanism of grid cells, many computational models are designed. The main models of grid cells contain OI models\citep{OKeefe2005,Burgess2007,Hasselmo2007,Pastoll2013,Burgess2008}, CAN models\citep{Fuhs2006,Burak2009,Guanella2007,Shipston-Sharman2016,Couey2013} and single-cell adaptation models\citep{Kropff2008,Si2012}. They mainly focus on the firing activity of single grid cell and generate the hexagonal patterns from different perspectives using self-motion inputs or external cues. However, the evidence shows that the grid cells are ordered in discrete modules and each grid-cell module shares common spacing, orientation\citep{Stensola2012,Rowland2016}. In addition, recent research demonstrates the grid cells from an single module exist on a toroidal manifold like 2D CAN using enormous records from many hundreds of grid cells and topological data analysis\citep{Gardner2022}. Some new features are found from the views of grid-cell modules. The analysis shows that the positions in the toroidal manifold can map the positions of animals in the physical world and single grid cell prefers to be activated at a singular position on the torus\citep{Gardner2022}. Current CAN models\citep{Fuhs2006,Burak2009,Guanella2007} can not be inconsistent with the analysis. Because the current CAN models are designed based on single grid cell and the properties of grid-cell modules do not be taken into account. Here, a CAN model for grid-cell module is proposed. It is driven by self-motion input of animals and receives the stimulation from external cues through place cells. Each neuron is preferentially active at a unique position on the torus and activated positions on the network represent the position of animals in the environment. This is consistent with the data analysis of \citet{Gardner2022}.  It demonstrates that our model supports the hypothesis about the grid-cell modules in the \citet{Gardner2022}.
+
+
+
+
+
+
+\todo[inline]{here}
+
+
+
+
+
+In here, our model is used to perform the path integration in longer steps. This is depicted in Fig.~\ref{fig:path_integration_long}. In three different grid-cell modules, their error remains a scope even after $100000$ steps without feedback from place cells. This also can partly explains why the rodent animals can return their dens even though they have go for a very long distance. 
+\begin{figure*}[t]
 	%	\subfigcapskip=-10pt %调整子图片与子标题的距离
 	\centering
 	\subfigure{
@@ -631,7 +647,7 @@ The rodent animals have outstanding navigation ability\citep{Ball2013}. They can
 	\label{fig:path_integration_long}
 \end{figure*}
 
-In summary, the PhaseCANN model was proposed for grid-cell module. Then the self-motion inputs are designed to drive the PhaseCANN model. In addition, to provides visual feedback for grid-cell module during the process of the path integration, the connection between place cell and grid cell is established. Simultaneously, the hexagonal firing patterns of single grid cell can be acquired by recording the firing activity of single neuron in the PhaseCANN model. Finally, we use our model to perform the path integration and comparing the results in different grid-cell properties and sizes of the PhaseCANN. The results point out that the network resolution ratio can influence the accuracy of the path integration. Furthermore, the results also manifests that our model can acquire outstanding performance even in the absence of external cues and on a large scale.
+In summary, the PhaseCAN model was proposed for grid-cell module. Then the self-motion inputs are designed to drive the PhaseCAN model. In addition, to provides visual feedback for grid-cell module during the process of the path integration, the connection between place cell and grid cell is established. Simultaneously, the hexagonal firing patterns of single grid cell can be acquired by recording the firing activity of single neuron in the PhaseCAN model. Finally, we use our model to perform the path integration and comparing the results in different grid-cell properties and sizes of the PhaseCAN. The results point out that the network resolution ratio can influence the accuracy of the path integration. Furthermore, the results also manifests that our model can acquire outstanding performance even in the absence of external cues and on a large scale.
 \section{Declaration of Competing Interest}
 The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.
 \section{Acknowledgments}
@@ -639,8 +655,9 @@ The authors declare that they have no known competing financial interests or per
 %% If you have bibdatabase file and want bibtex to generate the
 %% bibitems, please use
 %%
- \bibliographystyle{elsarticle-num} 
- \bibliography{zotero}
+% \bibliographystyle{elsarticle-num} 
+\bibliographystyle{elsarticle-harv} 
+\bibliography{zotero}
 
 %% else use the following coding to input the bibitems directly in the
 %% TeX file.

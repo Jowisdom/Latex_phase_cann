@@ -1,333 +1,410 @@
-\begin{thebibliography}{10}
-\expandafter\ifx\csname url\endcsname\relax
-  \def\url#1{\texttt{#1}}\fi
-\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
-\expandafter\ifx\csname href\endcsname\relax
-  \def\href#1#2{#2} \def\path#1{#1}\fi
-
-\bibitem{Stensola2012}
-H.~Stensola, T.~Stensola, T.~Solstad, K.~Fr\o~land, M.-B. Moser, E.~I. Moser,
-  The entorhinal grid map is discretized 492~(7427)  72--78.
-\newblock \href {https://doi.org/10.1038/nature11649}
-  {\path{doi:10.1038/nature11649}}.
-
-\bibitem{McNaughton2006}
-B.~L. McNaughton, F.~P. Battaglia, O.~Jensen, E.~I. Moser, M.-B. Moser,
-  \href{https://www.nature.com/articles/nrn1932}{Path integration and the
-  neural basis of the 'cognitive map'} 7~(8)  663--678.
-\newblock \href {https://doi.org/10.1038/nrn1932} {\path{doi:10.1038/nrn1932}}.
-\newline\urlprefix\url{https://www.nature.com/articles/nrn1932}
-
-\bibitem{Moser2017}
-E.~I. Moser, M.-B. Moser, B.~L. McNaughton,
-  \href{https://www.nature.com/articles/nn.4653}{Spatial representation in the
-  hippocampal formation: A history} 20~(11)  1448--1464.
-\newblock \href {https://doi.org/10.1038/nn.4653} {\path{doi:10.1038/nn.4653}}.
-\newline\urlprefix\url{https://www.nature.com/articles/nn.4653}
-
-\bibitem{Rowland2016}
-D.~C. Rowland, Y.~Roudi, M.-B. Moser, E.~I. Moser,
-  \href{https://doi.org/10.1146/annurev-neuro-070815-013824}{Ten years of grid
-  cells} 39  19--40.
-\newblock \href {http://arxiv.org/abs/27023731} {\path{arXiv:27023731}}, \href
-  {https://doi.org/10.1146/annurev-neuro-070815-013824}
-  {\path{doi:10.1146/annurev-neuro-070815-013824}}.
-\newline\urlprefix\url{https://doi.org/10.1146/annurev-neuro-070815-013824}
-
-\bibitem{Fyhn2008}
-M.~Fyhn, T.~Hafting, M.~P. Witter, E.~I. Moser, M.-B. Moser, Grid cells in mice
-  18~(12)  1230--1238.
-\newblock \href {https://doi.org/10.1002/hipo.20472}
-  {\path{doi:10.1002/hipo.20472}}.
-
-\bibitem{Yartsev2011}
-M.~M. Yartsev, M.~P. Witter, N.~Ulanovsky, Grid cells without theta
-  oscillations in the entorhinal cortex of bats 479~(7371)  103--107.
-\newblock \href {https://doi.org/10.1038/nature10583}
-  {\path{doi:10.1038/nature10583}}.
-
-\bibitem{Killian2012}
-N.~J. Killian, M.~J. Jutras, E.~A. Buffalo,
-  \href{https://www.nature.com/articles/nature11587}{A map of visual space in
-  the primate entorhinal cortex} 491~(7426)  761--764.
-\newblock \href {https://doi.org/10.1038/nature11587}
-  {\path{doi:10.1038/nature11587}}.
-\newline\urlprefix\url{https://www.nature.com/articles/nature11587}
-
-\bibitem{Jacobs2013}
-J.~Jacobs, C.~T. Weidemann, J.~F. Miller, A.~Solway, J.~F. Burke, X.-X. Wei,
-  N.~Suthana, M.~R. Sperling, A.~D. Sharan, I.~Fried, M.~J. Kahana,
-  \href{https://www.nature.com/articles/nn.3466}{Direct recordings of grid-like
-  neuronal activity in human spatial navigation} 16~(9)  1188--1190.
-\newblock \href {https://doi.org/10.1038/nn.3466} {\path{doi:10.1038/nn.3466}}.
-\newline\urlprefix\url{https://www.nature.com/articles/nn.3466}
-
-\bibitem{Kunz2015}
-L.~Kunz, T.~N. Schr\"oder, H.~Lee, C.~Montag, B.~Lachmann, R.~Sariyska,
-  M.~Reuter, R.~Stirnberg, T.~St\"ocker, P.~C. Messing-Floeter, Reduced
-  grid-cell\textendash like representations in adults at genetic risk for
-  alzheimer's disease 350~(6259)  430--433.
-\newblock \href {https://doi.org/10.1126/science.aac8128}
-  {\path{doi:10.1126/science.aac8128}}.
-
-\bibitem{Doeller2010}
-C.~F. Doeller, C.~Barry, N.~Burgess,
-  \href{https://www.nature.com/articles/nature08704}{Evidence for grid cells in
-  a human memory network} 463~(7281)  657--661.
-\newblock \href {https://doi.org/10.1038/nature08704}
-  {\path{doi:10.1038/nature08704}}.
-\newline\urlprefix\url{https://www.nature.com/articles/nature08704}
-
-\bibitem{DAlbis2017}
-T.~D'Albis, R.~Kempter,
-  \href{https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005782}{A
-  single-cell spiking model for the origin of grid-cell patterns} 13~(10)
-  e1005782.
-\newblock \href {https://doi.org/10.1371/journal.pcbi.1005782}
-  {\path{doi:10.1371/journal.pcbi.1005782}}.
-\newline\urlprefix\url{https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005782}
-
-\bibitem{OKeefe2005}
-J.~O'Keefe, N.~Burgess,
-  \href{https://onlinelibrary.wiley.com/doi/abs/10.1002/hipo.20115}{Dual phase
-  and rate coding in hippocampal place cells: Theoretical significance and
-  relationship to entorhinal grid cells} 15~(7)  853--866.
-\newblock \href {https://doi.org/10.1002/hipo.20115}
-  {\path{doi:10.1002/hipo.20115}}.
-\newline\urlprefix\url{https://onlinelibrary.wiley.com/doi/abs/10.1002/hipo.20115}
-
-\bibitem{Burgess2007}
-N.~Burgess, C.~Barry, J.~O'Keefe,
-  \href{https://onlinelibrary.wiley.com/doi/abs/10.1002/hipo.20327}{An
-  oscillatory interference model of grid cell firing} 17~(9)  801--812.
-\newblock \href {https://doi.org/10.1002/hipo.20327}
-  {\path{doi:10.1002/hipo.20327}}.
-\newline\urlprefix\url{https://onlinelibrary.wiley.com/doi/abs/10.1002/hipo.20327}
-
-\bibitem{Hasselmo2007}
-M.~E. Hasselmo, L.~M. Giocomo, E.~A. Zilli,
-  \href{https://onlinelibrary.wiley.com/doi/abs/10.1002/hipo.20374}{Grid cell
-  firing may arise from interference of theta frequency membrane potential
-  oscillations in single neurons} 17~(12)  1252--1271.
-\newblock \href {https://doi.org/10.1002/hipo.20374}
-  {\path{doi:10.1002/hipo.20374}}.
-\newline\urlprefix\url{https://onlinelibrary.wiley.com/doi/abs/10.1002/hipo.20374}
-
-\bibitem{Pastoll2013}
-H.~Pastoll, L.~Solanka, M.~C.~W. {van~Rossum}, M.~F. Nolan,
-  \href{https://www.cell.com/neuron/abstract/S0896-6273(12)01119-1}{Feedback
-  inhibition enables theta-nested gamma oscillations and grid firing fields}
-  77~(1)  141--154.
-\newblock \href {http://arxiv.org/abs/23312522} {\path{arXiv:23312522}}, \href
-  {https://doi.org/10.1016/j.neuron.2012.11.032}
-  {\path{doi:10.1016/j.neuron.2012.11.032}}.
-\newline\urlprefix\url{https://www.cell.com/neuron/abstract/S0896-6273(12)01119-1}
-
-\bibitem{Burgess2008}
-N.~Burgess,
-  \href{https://onlinelibrary.wiley.com/doi/abs/10.1002/hipo.20518}{Grid cells
-  and theta as oscillatory interference: Theory and predictions} 18~(12)
-  1157--1174.
-\newblock \href {https://doi.org/10.1002/hipo.20518}
-  {\path{doi:10.1002/hipo.20518}}.
-\newline\urlprefix\url{https://onlinelibrary.wiley.com/doi/abs/10.1002/hipo.20518}
-
-\bibitem{DAlbis2018}
-T.~D'Albis, Models of spatial representation in the medial entorhinal cortex.
-\newblock \href {https://doi.org/10.18452/19306} {\path{doi:10.18452/19306}}.
-
-\bibitem{Schmidt-Hieber2013}
-C.~Schmidt-Hieber, M.~H\"ausser,
-  \href{https://www.nature.com/articles/nn.3340}{Cellular mechanisms of spatial
-  navigation in the medial entorhinal cortex} 16~(3)  325--331.
-\newblock \href {https://doi.org/10.1038/nn.3340} {\path{doi:10.1038/nn.3340}}.
-\newline\urlprefix\url{https://www.nature.com/articles/nn.3340}
-
-\bibitem{Domnisoru2013}
-C.~Domnisoru, A.~A. Kinkhabwala, D.~W. Tank,
-  \href{https://www.nature.com/articles/nature11973}{Membrane potential
-  dynamics of grid cells} 495~(7440)  199--204.
-\newblock \href {https://doi.org/10.1038/nature11973}
-  {\path{doi:10.1038/nature11973}}.
-\newline\urlprefix\url{https://www.nature.com/articles/nature11973}
-
-\bibitem{Welday2011}
-A.~C. Welday, I.~G. Shlifer, M.~L. Bloom, K.~Zhang, H.~T. Blair,
-  \href{https://www.jneurosci.org/content/31/45/16157}{Cosine directional
-  tuning of theta cell burst frequencies: Evidence for spatial coding by
-  oscillatory interference} 31~(45)  16157--16176.
-\newblock \href {http://arxiv.org/abs/22072668} {\path{arXiv:22072668}}, \href
-  {https://doi.org/10.1523/JNEUROSCI.0712-11.2011}
-  {\path{doi:10.1523/JNEUROSCI.0712-11.2011}}.
-\newline\urlprefix\url{https://www.jneurosci.org/content/31/45/16157}
-
-\bibitem{Koenig2011}
-J.~Koenig, A.~N. Linder, J.~K. Leutgeb, S.~Leutgeb,
-  \href{https://www.science.org/doi/10.1126/science.1201685}{The spatial
-  periodicity of grid cells is not sustained during reduced theta oscillations}
-  332~(6029)  592--595.
-\newblock \href {https://doi.org/10.1126/science.1201685}
-  {\path{doi:10.1126/science.1201685}}.
-\newline\urlprefix\url{https://www.science.org/doi/10.1126/science.1201685}
-
-\bibitem{Brandon2011}
-M.~P. Brandon, A.~R. Bogaard, C.~P. Libby, M.~A. Connerney, K.~Gupta, M.~E.
-  Hasselmo,
-  \href{https://www.science.org/doi/10.1126/science.1201652}{Reduction of theta
-  rhythm dissociates grid cell spatial periodicity from directional tuning}
-  332~(6029)  595--599.
-\newblock \href {https://doi.org/10.1126/science.1201652}
-  {\path{doi:10.1126/science.1201652}}.
-\newline\urlprefix\url{https://www.science.org/doi/10.1126/science.1201652}
-
-\bibitem{Giocomo2007}
-L.~M. Giocomo, E.~A. Zilli, E.~Frans\'en, M.~E. Hasselmo,
-  \href{https://www.science.org/doi/10.1126/science.1139207}{Temporal frequency
-  of subthreshold oscillations scales with entorhinal grid cell field spacing}
-  315~(5819)  1719--1722.
-\newblock \href {https://doi.org/10.1126/science.1139207}
-  {\path{doi:10.1126/science.1139207}}.
-\newline\urlprefix\url{https://www.science.org/doi/10.1126/science.1139207}
-
-\bibitem{Hafting2005}
-T.~Hafting, M.~Fyhn, S.~Molden, M.-B. Moser, E.~I. Moser,
-  \href{https://www.nature.com/articles/nature03721}{Microstructure of a
-  spatial map in the entorhinal cortex} 436~(7052)  801--806.
-\newblock \href {https://doi.org/10.1038/nature03721}
-  {\path{doi:10.1038/nature03721}}.
-\newline\urlprefix\url{https://www.nature.com/articles/nature03721}
-
-\bibitem{Alonso1989}
-A.~Alonso, R.~R. Llin\'as,
-  \href{https://www.nature.com/articles/342175a0}{Subthreshold na+-dependent
-  theta-like rhythmicity in stellate cells of entorhinal cortex layer ii}
-  342~(6246)  175--177.
-\newblock \href {https://doi.org/10.1038/342175a0}
-  {\path{doi:10.1038/342175a0}}.
-\newline\urlprefix\url{https://www.nature.com/articles/342175a0}
-
-\bibitem{Taylor1999}
-J.~G. Taylor, \href{https://doi.org/10.1007/s004220050534}{Neural `bubble'
-  dynamics in two dimensions: Foundations} 80~(6)  393--409.
-\newblock \href {https://doi.org/10.1007/s004220050534}
-  {\path{doi:10.1007/s004220050534}}.
-\newline\urlprefix\url{https://doi.org/10.1007/s004220050534}
-
-\bibitem{Amari1977}
-S.-i. Amari, \href{https://doi.org/10.1007/BF00337259}{Dynamics of pattern
-  formation in lateral-inhibition type neural fields} 27~(2)  77--87.
-\newblock \href {https://doi.org/10.1007/BF00337259}
-  {\path{doi:10.1007/BF00337259}}.
-\newline\urlprefix\url{https://doi.org/10.1007/BF00337259}
-
-\bibitem{Fuhs2006}
-M.~C. Fuhs, D.~S. Touretzky,
-  \href{https://www.jneurosci.org/content/26/16/4266}{A spin glass model of
-  path integration in rat medial entorhinal cortex} 26~(16)  4266--4276.
-\newblock \href {http://arxiv.org/abs/16624947} {\path{arXiv:16624947}}, \href
-  {https://doi.org/10.1523/JNEUROSCI.4353-05.2006}
-  {\path{doi:10.1523/JNEUROSCI.4353-05.2006}}.
-\newline\urlprefix\url{https://www.jneurosci.org/content/26/16/4266}
-
-\bibitem{Burak2009}
-Y.~Burak, I.~R. Fiete,
-  \href{https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000291}{Accurate
-  path integration in continuous attractor network models of grid cells} 5~(2)
-  e1000291.
-\newblock \href {https://doi.org/10.1371/journal.pcbi.1000291}
-  {\path{doi:10.1371/journal.pcbi.1000291}}.
-\newline\urlprefix\url{https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000291}
-
-\bibitem{Guanella2007}
-A.~Guanella, D.~Kiper, P.~Verschure,
-  \href{https://www.worldscientific.com/doi/abs/10.1142/S0129065707001093}{A
-  model of grid cells based on a twisted torus topology} 17~(04)  231--240.
-\newblock \href {https://doi.org/10.1142/S0129065707001093}
-  {\path{doi:10.1142/S0129065707001093}}.
-\newline\urlprefix\url{https://www.worldscientific.com/doi/abs/10.1142/S0129065707001093}
-
-\bibitem{Shipston-Sharman2016}
-O.~Shipston-Sharman, L.~Solanka, M.~F. Nolan, Continuous attractor network
-  models of grid cell firing based on excitatory-inhibitory interactions
-  594~(22)  6547--6557.
-\newblock \href {http://arxiv.org/abs/27870120} {\path{arXiv:27870120}}, \href
-  {https://doi.org/10.1113/JP270630} {\path{doi:10.1113/JP270630}}.
-
-\bibitem{Couey2013}
-J.~J. Couey, A.~Witoelar, S.-J. Zhang, K.~Zheng, J.~Ye, B.~Dunn, R.~Czajkowski,
-  M.-B. Moser, E.~I. Moser, Y.~Roudi, M.~P. Witter,
-  \href{https://www.nature.com/articles/nn.3310}{Recurrent inhibitory circuitry
-  as a mechanism for grid formation} 16~(3)  318--324.
-\newblock \href {https://doi.org/10.1038/nn.3310} {\path{doi:10.1038/nn.3310}}.
-\newline\urlprefix\url{https://www.nature.com/articles/nn.3310}
-
-\bibitem{Yoon2013}
-K.~Yoon, M.~A. Buice, C.~Barry, R.~Hayman, N.~Burgess, I.~R. Fiete,
-  \href{https://www.nature.com/articles/nn.3450}{Specific evidence of
-  low-dimensional continuous attractor dynamics in grid cells} 16~(8)
-  1077--1084.
-\newblock \href {https://doi.org/10.1038/nn.3450} {\path{doi:10.1038/nn.3450}}.
-\newline\urlprefix\url{https://www.nature.com/articles/nn.3450}
-
-\bibitem{Bonnevie2013}
-T.~Bonnevie, B.~Dunn, M.~Fyhn, T.~Hafting, D.~Derdikman, J.~L. Kubie, Y.~Roudi,
-  E.~I. Moser, M.-B. Moser, Grid cells require excitatory drive from the
-  hippocampus 16~(3)  309--317.
-\newblock \href {https://doi.org/10.1038/nn.3311} {\path{doi:10.1038/nn.3311}}.
-
-\bibitem{Kropff2015}
-E.~Kropff, J.~E. Carmichael, M.-B. Moser, E.~I. Moser,
-  \href{https://www.nature.com/articles/nature14622}{Speed cells in the medial
-  entorhinal cortex} 523~(7561)  419--424.
-\newblock \href {https://doi.org/10.1038/nature14622}
-  {\path{doi:10.1038/nature14622}}.
-\newline\urlprefix\url{https://www.nature.com/articles/nature14622}
-
-\bibitem{Zhang1996}
-K.~Zhang, \href{https://www.jneurosci.org/content/16/6/2112}{Representation of
-  spatial orientation by the intrinsic dynamics of the head-direction cell
-  ensemble: A theory} 16~(6)  2112--2126.
-\newblock \href {http://arxiv.org/abs/8604055} {\path{arXiv:8604055}}, \href
-  {https://doi.org/10.1523/JNEUROSCI.16-06-02112.1996}
-  {\path{doi:10.1523/JNEUROSCI.16-06-02112.1996}}.
-\newline\urlprefix\url{https://www.jneurosci.org/content/16/6/2112}
-
-\bibitem{Taube1990}
-J.~Taube, R.~Muller, J.~B. Ranck, Head-direction cells recorded from the
-  postsubiculum in freely moving rats. ii. effects of environmental
-  manipulations, in: The Journal of Neuroscience : The Official Journal of the
-  Society for Neuroscience.
-\newblock \href {https://doi.org/10.1523/JNEUROSCI.10-02-00436.1990}
-  {\path{doi:10.1523/JNEUROSCI.10-02-00436.1990}}.
-
-\bibitem{Milford2008d}
-Milford, \href{http://link.springer.com/10.1007/978-3-540-77520-1}{Robot
-  Navigation from Nature}, Vol.~41 of Springer Tracts in Advanced Robotics,
-  Springer.
-\newblock \href {https://doi.org/10.1007/978-3-540-77520-1}
-  {\path{doi:10.1007/978-3-540-77520-1}}.
-\newline\urlprefix\url{http://link.springer.com/10.1007/978-3-540-77520-1}
-
-\bibitem{Bush2015}
-D.~Bush, C.~Barry, D.~Manson, N.~Burgess,
-  \href{https://www.sciencedirect.com/science/article/pii/S0896627315006285}{Using
-  grid cells for navigation} 87~(3)  507--520.
-\newblock \href {https://doi.org/10.1016/j.neuron.2015.07.006}
-  {\path{doi:10.1016/j.neuron.2015.07.006}}.
-\newline\urlprefix\url{https://www.sciencedirect.com/science/article/pii/S0896627315006285}
-
-\bibitem{Edvardsen2020}
-V.~Edvardsen, A.~Bicanski, N.~Burgess, Navigating with grid and place cells in
-  cluttered environments 30~(3)  220--232.
-\newblock \href {https://doi.org/10.1002/hipo.23147}
-  {\path{doi:10.1002/hipo.23147}}.
-
-\bibitem{Ball2013}
-D.~Ball, S.~Heath, J.~Wiles, G.~Wyeth, P.~Corke, M.~Milford,
-  \href{http://link.springer.com/10.1007/s10514-012-9317-9}{Openratslam: An
-  open source brain-based slam system} 34~(3)  149--176.
-\newblock \href {https://doi.org/10.1007/s10514-012-9317-9}
-  {\path{doi:10.1007/s10514-012-9317-9}}.
-\newline\urlprefix\url{http://link.springer.com/10.1007/s10514-012-9317-9}
+\begin{thebibliography}{40}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\href}[2]{#2}
+\providecommand{\path}[1]{#1}
+\providecommand{\DOIprefix}{doi:}
+\providecommand{\ArXivprefix}{arXiv:}
+\providecommand{\URLprefix}{URL: }
+\providecommand{\Pubmedprefix}{pmid:}
+\providecommand{\doi}[1]{\href{http://dx.doi.org/#1}{\path{#1}}}
+\providecommand{\Pubmed}[1]{\href{pmid:#1}{\path{#1}}}
+\providecommand{\bibinfo}[2]{#2}
+\ifx\xfnm\relax \def\xfnm[#1]{\unskip,\space#1}\fi
+%Type = Article
+\bibitem[{Alonso and Llin{\'a}s(1989)}]{Alonso1989}
+\bibinfo{author}{Alonso, A.}, \bibinfo{author}{Llin{\'a}s, R.R.},
+  \bibinfo{year}{1989}.
+\newblock \bibinfo{title}{Subthreshold {{Na}}+-dependent theta-like rhythmicity
+  in stellate cells of entorhinal cortex layer {{II}}}.
+\newblock \bibinfo{journal}{Nature} \bibinfo{volume}{342},
+  \bibinfo{pages}{175--177}.
+\newblock \DOIprefix\doi{10.1038/342175a0}.
+%Type = Article
+\bibitem[{Amari(1977)}]{Amari1977}
+\bibinfo{author}{Amari, S.i.}, \bibinfo{year}{1977}.
+\newblock \bibinfo{title}{Dynamics of pattern formation in lateral-inhibition
+  type neural fields}.
+\newblock \bibinfo{journal}{Biological Cybernetics} \bibinfo{volume}{27},
+  \bibinfo{pages}{77--87}.
+\newblock \DOIprefix\doi{10.1007/BF00337259}.
+%Type = Article
+\bibitem[{Brandon et~al.(2011)Brandon, Bogaard, Libby, Connerney, Gupta and
+  Hasselmo}]{Brandon2011}
+\bibinfo{author}{Brandon, M.P.}, \bibinfo{author}{Bogaard, A.R.},
+  \bibinfo{author}{Libby, C.P.}, \bibinfo{author}{Connerney, M.A.},
+  \bibinfo{author}{Gupta, K.}, \bibinfo{author}{Hasselmo, M.E.},
+  \bibinfo{year}{2011}.
+\newblock \bibinfo{title}{Reduction of {{Theta Rhythm Dissociates Grid Cell
+  Spatial Periodicity}} from {{Directional Tuning}}}.
+\newblock \bibinfo{journal}{Science} \bibinfo{volume}{332},
+  \bibinfo{pages}{595--599}.
+\newblock \DOIprefix\doi{10.1126/science.1201652}.
+%Type = Article
+\bibitem[{Burak and Fiete(2009)}]{Burak2009}
+\bibinfo{author}{Burak, Y.}, \bibinfo{author}{Fiete, I.R.},
+  \bibinfo{year}{2009}.
+\newblock \bibinfo{title}{Accurate {{Path Integration}} in {{Continuous
+  Attractor Network Models}} of {{Grid Cells}}}.
+\newblock \bibinfo{journal}{PLOS Computational Biology} \bibinfo{volume}{5},
+  \bibinfo{pages}{e1000291}.
+\newblock \DOIprefix\doi{10.1371/journal.pcbi.1000291}.
+%Type = Article
+\bibitem[{Burgess(2008)}]{Burgess2008}
+\bibinfo{author}{Burgess, N.}, \bibinfo{year}{2008}.
+\newblock \bibinfo{title}{{Grid cells and theta as oscillatory interference:
+  Theory and predictions}}.
+\newblock \bibinfo{journal}{Hippocampus} \bibinfo{volume}{18},
+  \bibinfo{pages}{1157--1174}.
+\newblock \DOIprefix\doi{10.1002/hipo.20518}.
+%Type = Article
+\bibitem[{Burgess et~al.(2007)Burgess, Barry and O'Keefe}]{Burgess2007}
+\bibinfo{author}{Burgess, N.}, \bibinfo{author}{Barry, C.},
+  \bibinfo{author}{O'Keefe, J.}, \bibinfo{year}{2007}.
+\newblock \bibinfo{title}{An oscillatory interference model of grid cell
+  firing}.
+\newblock \bibinfo{journal}{Hippocampus} \bibinfo{volume}{17},
+  \bibinfo{pages}{801--812}.
+\newblock \DOIprefix\doi{10.1002/hipo.20327}.
+%Type = Article
+\bibitem[{Bush et~al.(2015)Bush, Barry, Manson and Burgess}]{Bush2015}
+\bibinfo{author}{Bush, D.}, \bibinfo{author}{Barry, C.},
+  \bibinfo{author}{Manson, D.}, \bibinfo{author}{Burgess, N.},
+  \bibinfo{year}{2015}.
+\newblock \bibinfo{title}{Using {{Grid Cells}} for {{Navigation}}}.
+\newblock \bibinfo{journal}{Neuron} \bibinfo{volume}{87},
+  \bibinfo{pages}{507--520}.
+\newblock \DOIprefix\doi{10.1016/j.neuron.2015.07.006}.
+%Type = Article
+\bibitem[{Couey et~al.(2013)Couey, Witoelar, Zhang, Zheng, Ye, Dunn,
+  Czajkowski, Moser, Moser, Roudi and Witter}]{Couey2013}
+\bibinfo{author}{Couey, J.J.}, \bibinfo{author}{Witoelar, A.},
+  \bibinfo{author}{Zhang, S.J.}, \bibinfo{author}{Zheng, K.},
+  \bibinfo{author}{Ye, J.}, \bibinfo{author}{Dunn, B.},
+  \bibinfo{author}{Czajkowski, R.}, \bibinfo{author}{Moser, M.B.},
+  \bibinfo{author}{Moser, E.I.}, \bibinfo{author}{Roudi, Y.},
+  \bibinfo{author}{Witter, M.P.}, \bibinfo{year}{2013}.
+\newblock \bibinfo{title}{Recurrent inhibitory circuitry as a mechanism for
+  grid formation}.
+\newblock \bibinfo{journal}{Nature Neuroscience} \bibinfo{volume}{16},
+  \bibinfo{pages}{318--324}.
+\newblock \DOIprefix\doi{10.1038/nn.3310}.
+%Type = Phdthesis
+\bibitem[{D'Albis(2018)}]{DAlbis2018}
+\bibinfo{author}{D'Albis, T.}, \bibinfo{year}{2018}.
+\newblock \bibinfo{title}{Models of Spatial Representation in the Medial
+  Entorhinal Cortex}.
+\newblock Ph.D. thesis.
+\newblock \DOIprefix\doi{10.18452/19306}.
+%Type = Article
+\bibitem[{Doeller et~al.(2010)Doeller, Barry and Burgess}]{Doeller2010}
+\bibinfo{author}{Doeller, C.F.}, \bibinfo{author}{Barry, C.},
+  \bibinfo{author}{Burgess, N.}, \bibinfo{year}{2010}.
+\newblock \bibinfo{title}{Evidence for grid cells in a human memory network}.
+\newblock \bibinfo{journal}{Nature} \bibinfo{volume}{463},
+  \bibinfo{pages}{657--661}.
+\newblock \DOIprefix\doi{10.1038/nature08704}.
+%Type = Article
+\bibitem[{Domnisoru et~al.(2013)Domnisoru, Kinkhabwala and
+  Tank}]{Domnisoru2013}
+\bibinfo{author}{Domnisoru, C.}, \bibinfo{author}{Kinkhabwala, A.A.},
+  \bibinfo{author}{Tank, D.W.}, \bibinfo{year}{2013}.
+\newblock \bibinfo{title}{Membrane potential dynamics of grid cells}.
+\newblock \bibinfo{journal}{Nature} \bibinfo{volume}{495},
+  \bibinfo{pages}{199--204}.
+\newblock \DOIprefix\doi{10.1038/nature11973}.
+%Type = Article
+\bibitem[{Fuhs and Touretzky(2006)}]{Fuhs2006}
+\bibinfo{author}{Fuhs, M.C.}, \bibinfo{author}{Touretzky, D.S.},
+  \bibinfo{year}{2006}.
+\newblock \bibinfo{title}{A {{Spin Glass Model}} of {{Path Integration}} in
+  {{Rat Medial Entorhinal Cortex}}}.
+\newblock \bibinfo{journal}{Journal of Neuroscience} \bibinfo{volume}{26},
+  \bibinfo{pages}{4266--4276}.
+\newblock \DOIprefix\doi{10.1523/JNEUROSCI.4353-05.2006}.
+%Type = Article
+\bibitem[{Fyhn et~al.(2008)Fyhn, Hafting, Witter, Moser and Moser}]{Fyhn2008}
+\bibinfo{author}{Fyhn, M.}, \bibinfo{author}{Hafting, T.},
+  \bibinfo{author}{Witter, M.P.}, \bibinfo{author}{Moser, E.I.},
+  \bibinfo{author}{Moser, M.B.}, \bibinfo{year}{2008}.
+\newblock \bibinfo{title}{Grid cells in mice}.
+\newblock \bibinfo{journal}{Hippocampus} \bibinfo{volume}{18},
+  \bibinfo{pages}{1230--1238}.
+\newblock \DOIprefix\doi{10.1002/hipo.20472}.
+%Type = Article
+\bibitem[{Gardner et~al.(2022)Gardner, Hermansen, Pachitariu, Burak, Baas,
+  Dunn, Moser and Moser}]{Gardner2022}
+\bibinfo{author}{Gardner, R.J.}, \bibinfo{author}{Hermansen, E.},
+  \bibinfo{author}{Pachitariu, M.}, \bibinfo{author}{Burak, Y.},
+  \bibinfo{author}{Baas, N.A.}, \bibinfo{author}{Dunn, B.A.},
+  \bibinfo{author}{Moser, M.B.}, \bibinfo{author}{Moser, E.I.},
+  \bibinfo{year}{2022}.
+\newblock \bibinfo{title}{Toroidal topology of population activity in grid
+  cells}.
+\newblock \bibinfo{journal}{Nature} \bibinfo{volume}{602},
+  \bibinfo{pages}{123--128}.
+\newblock \DOIprefix\doi{10.1038/s41586-021-04268-7}.
+%Type = Article
+\bibitem[{Giocomo et~al.(2011)Giocomo, Hussaini, Zheng, Kandel, Moser and
+  Moser}]{Giocomo2011}
+\bibinfo{author}{Giocomo, L.M.}, \bibinfo{author}{Hussaini, S.A.},
+  \bibinfo{author}{Zheng, F.}, \bibinfo{author}{Kandel, E.R.},
+  \bibinfo{author}{Moser, M.B.}, \bibinfo{author}{Moser, E.I.},
+  \bibinfo{year}{2011}.
+\newblock \bibinfo{title}{Grid {{Cells Use HCN1 Channels}} for {{Spatial
+  Scaling}}}.
+\newblock \bibinfo{journal}{Cell} \bibinfo{volume}{147},
+  \bibinfo{pages}{1159--1170}.
+\newblock \DOIprefix\doi{10.1016/j.cell.2011.08.051}.
+%Type = Article
+\bibitem[{Giocomo et~al.(2007)Giocomo, Zilli, Frans{\'e}n and
+  Hasselmo}]{Giocomo2007}
+\bibinfo{author}{Giocomo, L.M.}, \bibinfo{author}{Zilli, E.A.},
+  \bibinfo{author}{Frans{\'e}n, E.}, \bibinfo{author}{Hasselmo, M.E.},
+  \bibinfo{year}{2007}.
+\newblock \bibinfo{title}{Temporal {{Frequency}} of {{Subthreshold Oscillations
+  Scales}} with {{Entorhinal Grid Cell Field Spacing}}}.
+\newblock \bibinfo{journal}{Science} \bibinfo{volume}{315},
+  \bibinfo{pages}{1719--1722}.
+\newblock \DOIprefix\doi{10.1126/science.1139207}.
+%Type = Article
+\bibitem[{Guanella et~al.(2007)Guanella, Kiper and Verschure}]{Guanella2007}
+\bibinfo{author}{Guanella, A.}, \bibinfo{author}{Kiper, D.},
+  \bibinfo{author}{Verschure, P.}, \bibinfo{year}{2007}.
+\newblock \bibinfo{title}{A model of grid cells based on a twisted torus
+  topology}.
+\newblock \bibinfo{journal}{International Journal of Neural Systems}
+  \bibinfo{volume}{17}, \bibinfo{pages}{231--240}.
+\newblock \DOIprefix\doi{10.1142/S0129065707001093}.
+%Type = Article
+\bibitem[{Hafting et~al.(2005)Hafting, Fyhn, Molden, Moser and
+  Moser}]{Hafting2005}
+\bibinfo{author}{Hafting, T.}, \bibinfo{author}{Fyhn, M.},
+  \bibinfo{author}{Molden, S.}, \bibinfo{author}{Moser, M.B.},
+  \bibinfo{author}{Moser, E.I.}, \bibinfo{year}{2005}.
+\newblock \bibinfo{title}{Microstructure of a spatial map in the entorhinal
+  cortex}.
+\newblock \bibinfo{journal}{Nature} \bibinfo{volume}{436},
+  \bibinfo{pages}{801--806}.
+\newblock \DOIprefix\doi{10.1038/nature03721}.
+%Type = Article
+\bibitem[{Hasselmo et~al.(2007)Hasselmo, Giocomo and Zilli}]{Hasselmo2007}
+\bibinfo{author}{Hasselmo, M.E.}, \bibinfo{author}{Giocomo, L.M.},
+  \bibinfo{author}{Zilli, E.A.}, \bibinfo{year}{2007}.
+\newblock \bibinfo{title}{{Grid cell firing may arise from interference of
+  theta frequency membrane potential oscillations in single neurons}}.
+\newblock \bibinfo{journal}{Hippocampus} \bibinfo{volume}{17},
+  \bibinfo{pages}{1252--1271}.
+\newblock \DOIprefix\doi{10.1002/hipo.20374}.
+%Type = Article
+\bibitem[{Jacobs et~al.(2013)Jacobs, Weidemann, Miller, Solway, Burke, Wei,
+  Suthana, Sperling, Sharan, Fried and Kahana}]{Jacobs2013}
+\bibinfo{author}{Jacobs, J.}, \bibinfo{author}{Weidemann, C.T.},
+  \bibinfo{author}{Miller, J.F.}, \bibinfo{author}{Solway, A.},
+  \bibinfo{author}{Burke, J.F.}, \bibinfo{author}{Wei, X.X.},
+  \bibinfo{author}{Suthana, N.}, \bibinfo{author}{Sperling, M.R.},
+  \bibinfo{author}{Sharan, A.D.}, \bibinfo{author}{Fried, I.},
+  \bibinfo{author}{Kahana, M.J.}, \bibinfo{year}{2013}.
+\newblock \bibinfo{title}{Direct recordings of grid-like neuronal activity in
+  human spatial navigation}.
+\newblock \bibinfo{journal}{Nature Neuroscience} \bibinfo{volume}{16},
+  \bibinfo{pages}{1188--1190}.
+\newblock \DOIprefix\doi{10.1038/nn.3466}.
+%Type = Article
+\bibitem[{Killian et~al.(2012)Killian, Jutras and Buffalo}]{Killian2012}
+\bibinfo{author}{Killian, N.J.}, \bibinfo{author}{Jutras, M.J.},
+  \bibinfo{author}{Buffalo, E.A.}, \bibinfo{year}{2012}.
+\newblock \bibinfo{title}{A map of visual space in the primate entorhinal
+  cortex}.
+\newblock \bibinfo{journal}{Nature} \bibinfo{volume}{491},
+  \bibinfo{pages}{761--764}.
+\newblock \DOIprefix\doi{10.1038/nature11587}.
+%Type = Article
+\bibitem[{Koenig et~al.(2011)Koenig, Linder, Leutgeb and Leutgeb}]{Koenig2011}
+\bibinfo{author}{Koenig, J.}, \bibinfo{author}{Linder, A.N.},
+  \bibinfo{author}{Leutgeb, J.K.}, \bibinfo{author}{Leutgeb, S.},
+  \bibinfo{year}{2011}.
+\newblock \bibinfo{title}{The {{Spatial Periodicity}} of {{Grid Cells Is Not
+  Sustained During Reduced Theta Oscillations}}}.
+\newblock \bibinfo{journal}{Science} \bibinfo{volume}{332},
+  \bibinfo{pages}{592--595}.
+\newblock \DOIprefix\doi{10.1126/science.1201685}.
+%Type = Article
+\bibitem[{Kropff et~al.(2015)Kropff, Carmichael, Moser and Moser}]{Kropff2015}
+\bibinfo{author}{Kropff, E.}, \bibinfo{author}{Carmichael, J.E.},
+  \bibinfo{author}{Moser, M.B.}, \bibinfo{author}{Moser, E.I.},
+  \bibinfo{year}{2015}.
+\newblock \bibinfo{title}{Speed cells in the medial entorhinal cortex}.
+\newblock \bibinfo{journal}{Nature} \bibinfo{volume}{523},
+  \bibinfo{pages}{419--424}.
+\newblock \DOIprefix\doi{10.1038/nature14622}.
+%Type = Article
+\bibitem[{Kropff and Treves(2008)}]{Kropff2008}
+\bibinfo{author}{Kropff, E.}, \bibinfo{author}{Treves, A.},
+  \bibinfo{year}{2008}.
+\newblock \bibinfo{title}{The emergence of grid cells: {{Intelligent}} design
+  or just adaptation?}
+\newblock \bibinfo{journal}{Hippocampus} \bibinfo{volume}{18},
+  \bibinfo{pages}{1256--1269}.
+\newblock \DOIprefix\doi{10.1002/hipo.20520}.
+%Type = Article
+\bibitem[{Kunz et~al.(2015)Kunz, Schr{\"o}der, Lee, Montag, Lachmann, Sariyska,
+  Reuter, Stirnberg, St{\"o}cker and {Messing-Floeter}}]{Kunz2015}
+\bibinfo{author}{Kunz, L.}, \bibinfo{author}{Schr{\"o}der, T.N.},
+  \bibinfo{author}{Lee, H.}, \bibinfo{author}{Montag, C.},
+  \bibinfo{author}{Lachmann, B.}, \bibinfo{author}{Sariyska, R.},
+  \bibinfo{author}{Reuter, M.}, \bibinfo{author}{Stirnberg, R.},
+  \bibinfo{author}{St{\"o}cker, T.}, \bibinfo{author}{{Messing-Floeter}, P.C.},
+  \bibinfo{year}{2015}.
+\newblock \bibinfo{title}{Reduced grid-cell\textendash like representations in
+  adults at genetic risk for {{Alzheimer}}'s disease}.
+\newblock \bibinfo{journal}{Science} \bibinfo{volume}{350},
+  \bibinfo{pages}{430--433}.
+\newblock \DOIprefix\doi{10.1126/science.aac8128}.
+%Type = Article
+\bibitem[{McNaughton et~al.(2006)McNaughton, Battaglia, Jensen, Moser and
+  Moser}]{McNaughton2006}
+\bibinfo{author}{McNaughton, B.L.}, \bibinfo{author}{Battaglia, F.P.},
+  \bibinfo{author}{Jensen, O.}, \bibinfo{author}{Moser, E.I.},
+  \bibinfo{author}{Moser, M.B.}, \bibinfo{year}{2006}.
+\newblock \bibinfo{title}{Path integration and the neural basis of the
+  'cognitive map'}.
+\newblock \bibinfo{journal}{Nature Reviews Neuroscience} \bibinfo{volume}{7},
+  \bibinfo{pages}{663--678}.
+\newblock \DOIprefix\doi{10.1038/nrn1932}.
+%Type = Article
+\bibitem[{Moser et~al.(2017)Moser, Moser and McNaughton}]{Moser2017}
+\bibinfo{author}{Moser, E.I.}, \bibinfo{author}{Moser, M.B.},
+  \bibinfo{author}{McNaughton, B.L.}, \bibinfo{year}{2017}.
+\newblock \bibinfo{title}{Spatial representation in the hippocampal formation:
+  A history}.
+\newblock \bibinfo{journal}{Nature Neuroscience} \bibinfo{volume}{20},
+  \bibinfo{pages}{1448--1464}.
+\newblock \DOIprefix\doi{10.1038/nn.4653}.
+%Type = Article
+\bibitem[{O'Keefe and Burgess(2005)}]{OKeefe2005}
+\bibinfo{author}{O'Keefe, J.}, \bibinfo{author}{Burgess, N.},
+  \bibinfo{year}{2005}.
+\newblock \bibinfo{title}{Dual phase and rate coding in hippocampal place
+  cells: {{Theoretical}} significance and relationship to entorhinal grid
+  cells}.
+\newblock \bibinfo{journal}{Hippocampus} \bibinfo{volume}{15},
+  \bibinfo{pages}{853--866}.
+\newblock \DOIprefix\doi{10.1002/hipo.20115}.
+%Type = Article
+\bibitem[{O'Keefe and Conway(1978)}]{OKeefe1978}
+\bibinfo{author}{O'Keefe, J.}, \bibinfo{author}{Conway, D.H.},
+  \bibinfo{year}{1978}.
+\newblock \bibinfo{title}{Hippocampal place units in the freely moving rat:
+  {{Why}} they fire where they fire}.
+\newblock \bibinfo{journal}{Experimental Brain Research} \bibinfo{volume}{31},
+  \bibinfo{pages}{573--590}.
+\newblock \DOIprefix\doi{10.1007/BF00239813}.
+%Type = Article
+\bibitem[{Pastoll et~al.(2013)Pastoll, Solanka, {van~Rossum} and
+  Nolan}]{Pastoll2013}
+\bibinfo{author}{Pastoll, H.}, \bibinfo{author}{Solanka, L.},
+  \bibinfo{author}{{van~Rossum}, M.C.W.}, \bibinfo{author}{Nolan, M.F.},
+  \bibinfo{year}{2013}.
+\newblock \bibinfo{title}{Feedback {{Inhibition Enables Theta-Nested Gamma
+  Oscillations}} and {{Grid Firing Fields}}}.
+\newblock \bibinfo{journal}{Neuron} \bibinfo{volume}{77},
+  \bibinfo{pages}{141--154}.
+\newblock \DOIprefix\doi{10.1016/j.neuron.2012.11.032}.
+%Type = Article
+\bibitem[{Rowland et~al.(2016)Rowland, Roudi, Moser and Moser}]{Rowland2016}
+\bibinfo{author}{Rowland, D.C.}, \bibinfo{author}{Roudi, Y.},
+  \bibinfo{author}{Moser, M.B.}, \bibinfo{author}{Moser, E.I.},
+  \bibinfo{year}{2016}.
+\newblock \bibinfo{title}{Ten {{Years}} of {{Grid Cells}}}.
+\newblock \bibinfo{journal}{Annual review of neuroscience}
+  \bibinfo{volume}{39}, \bibinfo{pages}{19--40}.
+\newblock \DOIprefix\doi{10.1146/annurev-neuro-070815-013824}.
+%Type = Article
+\bibitem[{{Schmidt-Hieber} and H{\"a}usser(2013)}]{Schmidt-Hieber2013}
+\bibinfo{author}{{Schmidt-Hieber}, C.}, \bibinfo{author}{H{\"a}usser, M.},
+  \bibinfo{year}{2013}.
+\newblock \bibinfo{title}{Cellular mechanisms of spatial navigation in the
+  medial entorhinal cortex}.
+\newblock \bibinfo{journal}{Nature Neuroscience} \bibinfo{volume}{16},
+  \bibinfo{pages}{325--331}.
+\newblock \DOIprefix\doi{10.1038/nn.3340}.
+%Type = Article
+\bibitem[{{Shipston-Sharman} et~al.(2016){Shipston-Sharman}, Solanka and
+  Nolan}]{Shipston-Sharman2016}
+\bibinfo{author}{{Shipston-Sharman}, O.}, \bibinfo{author}{Solanka, L.},
+  \bibinfo{author}{Nolan, M.F.}, \bibinfo{year}{2016}.
+\newblock \bibinfo{title}{Continuous attractor network models of grid cell
+  firing based on excitatory-inhibitory interactions}.
+\newblock \bibinfo{journal}{The Journal of Physiology} \bibinfo{volume}{594},
+  \bibinfo{pages}{6547--6557}.
+\newblock \DOIprefix\doi{10.1113/JP270630}.
+%Type = Article
+\bibitem[{Si et~al.(2012)Si, Kropff and Treves}]{Si2012}
+\bibinfo{author}{Si, B.}, \bibinfo{author}{Kropff, E.},
+  \bibinfo{author}{Treves, A.}, \bibinfo{year}{2012}.
+\newblock \bibinfo{title}{Grid alignment in entorhinal cortex}.
+\newblock \bibinfo{journal}{Biological Cybernetics} \bibinfo{volume}{106},
+  \bibinfo{pages}{483--506}.
+\newblock \DOIprefix\doi{10.1007/s00422-012-0513-7}.
+%Type = Article
+\bibitem[{Stensola et~al.(2012)Stensola, Stensola, Solstad, Fr{\o}land, Moser
+  and Moser}]{Stensola2012}
+\bibinfo{author}{Stensola, H.}, \bibinfo{author}{Stensola, T.},
+  \bibinfo{author}{Solstad, T.}, \bibinfo{author}{Fr{\o}land, K.},
+  \bibinfo{author}{Moser, M.B.}, \bibinfo{author}{Moser, E.I.},
+  \bibinfo{year}{2012}.
+\newblock \bibinfo{title}{The entorhinal grid map is discretized}.
+\newblock \bibinfo{journal}{Nature} \bibinfo{volume}{492},
+  \bibinfo{pages}{72--78}.
+\newblock \DOIprefix\doi{10.1038/nature11649}.
+%Type = Article
+\bibitem[{Taylor(1999)}]{Taylor1999}
+\bibinfo{author}{Taylor, J.G.}, \bibinfo{year}{1999}.
+\newblock \bibinfo{title}{Neural `bubble' dynamics in two dimensions:
+  Foundations}.
+\newblock \bibinfo{journal}{Biological Cybernetics} \bibinfo{volume}{80},
+  \bibinfo{pages}{393--409}.
+\newblock \DOIprefix\doi{10.1007/s004220050534}.
+%Type = Article
+\bibitem[{Tolman(1948)}]{Tolman1948}
+\bibinfo{author}{Tolman, E.C.}, \bibinfo{year}{1948}.
+\newblock \bibinfo{title}{Cognitive maps in rats and men.}
+\newblock \bibinfo{journal}{Psychological Review} \bibinfo{volume}{55},
+  \bibinfo{pages}{189--208}.
+\newblock \DOIprefix\doi{10.1037/h0061626}.
+%Type = Article
+\bibitem[{Welday et~al.(2011)Welday, Shlifer, Bloom, Zhang and
+  Blair}]{Welday2011}
+\bibinfo{author}{Welday, A.C.}, \bibinfo{author}{Shlifer, I.G.},
+  \bibinfo{author}{Bloom, M.L.}, \bibinfo{author}{Zhang, K.},
+  \bibinfo{author}{Blair, H.T.}, \bibinfo{year}{2011}.
+\newblock \bibinfo{title}{Cosine {{Directional Tuning}} of {{Theta Cell Burst
+  Frequencies}}: {{Evidence}} for {{Spatial Coding}} by {{Oscillatory
+  Interference}}}.
+\newblock \bibinfo{journal}{Journal of Neuroscience} \bibinfo{volume}{31},
+  \bibinfo{pages}{16157--16176}.
+\newblock \DOIprefix\doi{10.1523/JNEUROSCI.0712-11.2011}.
+%Type = Article
+\bibitem[{Yartsev et~al.(2011)Yartsev, Witter and Ulanovsky}]{Yartsev2011}
+\bibinfo{author}{Yartsev, M.M.}, \bibinfo{author}{Witter, M.P.},
+  \bibinfo{author}{Ulanovsky, N.}, \bibinfo{year}{2011}.
+\newblock \bibinfo{title}{Grid cells without theta oscillations in the
+  entorhinal cortex of bats}.
+\newblock \bibinfo{journal}{Nature} \bibinfo{volume}{479},
+  \bibinfo{pages}{103--107}.
+\newblock \DOIprefix\doi{10.1038/nature10583}.
+%Type = Article
+\bibitem[{Yoon et~al.(2013)Yoon, Buice, Barry, Hayman, Burgess and
+  Fiete}]{Yoon2013}
+\bibinfo{author}{Yoon, K.}, \bibinfo{author}{Buice, M.A.},
+  \bibinfo{author}{Barry, C.}, \bibinfo{author}{Hayman, R.},
+  \bibinfo{author}{Burgess, N.}, \bibinfo{author}{Fiete, I.R.},
+  \bibinfo{year}{2013}.
+\newblock \bibinfo{title}{Specific evidence of low-dimensional continuous
+  attractor dynamics in grid cells}.
+\newblock \bibinfo{journal}{Nature Neuroscience} \bibinfo{volume}{16},
+  \bibinfo{pages}{1077--1084}.
+\newblock \DOIprefix\doi{10.1038/nn.3450}.
 
 \end{thebibliography}

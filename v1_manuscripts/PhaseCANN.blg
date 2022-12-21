@@ -1,130 +1,56 @@
-This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
+This is BibTeX, Version 0.99d (TeX Live 2022)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
-The top-level auxiliary file: PhaseCANN.aux
+The top-level auxiliary file: /Users/wisdom/Desktop/Git/Latex_PhaseCANN/v1_manuscripts/PhaseCANN.aux
 The style file: elsarticle-num.bst
 Database file #1: zotero.bib
-Warning--entry type for "DAlbis2018" isn't style-file defined
---line 596 of file zotero.bib
+Warning--I didn't find a database entry for "Bonnevie2013"
 Warning--I didn't find a database entry for "McNaughton2006c"
-Warning--empty journal in Stensola2012
-Warning--empty year in Stensola2012
-Warning--empty journal in Moser2017
-Warning--empty year in Moser2017
-Warning--empty journal in Rowland2016
-Warning--empty year in Rowland2016
-Warning--empty journal in Fyhn2008
-Warning--empty year in Fyhn2008
-Warning--empty journal in Yartsev2011
-Warning--empty year in Yartsev2011
-Warning--empty journal in Killian2012
-Warning--empty year in Killian2012
-Warning--empty journal in Jacobs2013
-Warning--empty year in Jacobs2013
-Warning--empty journal in Kunz2015
-Warning--empty year in Kunz2015
-Warning--empty journal in Doeller2010
-Warning--empty year in Doeller2010
-Warning--empty journal in DAlbis2017
-Warning--empty year in DAlbis2017
-Warning--empty journal in OKeefe2005
-Warning--empty year in OKeefe2005
-Warning--empty journal in Burgess2007
-Warning--empty year in Burgess2007
-Warning--empty journal in Hasselmo2007
-Warning--empty year in Hasselmo2007
-Warning--empty journal in Pastoll2013
-Warning--empty year in Pastoll2013
-Warning--empty journal in Burgess2008
-Warning--empty year in Burgess2008
-Warning--empty year in DAlbis2018
-Warning--empty journal in Schmidt-Hieber2013
-Warning--empty year in Schmidt-Hieber2013
-Warning--empty journal in Domnisoru2013
-Warning--empty year in Domnisoru2013
-Warning--empty journal in Welday2011
-Warning--empty year in Welday2011
-Warning--empty journal in Koenig2011
-Warning--empty year in Koenig2011
-Warning--empty journal in Brandon2011
-Warning--empty year in Brandon2011
-Warning--empty journal in Giocomo2007
-Warning--empty year in Giocomo2007
-Warning--empty journal in Hafting2005
-Warning--empty year in Hafting2005
-Warning--empty journal in Alonso1989
-Warning--empty year in Alonso1989
-Warning--empty journal in Taylor1999
-Warning--empty year in Taylor1999
-Warning--empty journal in Amari1977
-Warning--empty year in Amari1977
-Warning--empty journal in Fuhs2006
-Warning--empty year in Fuhs2006
-Warning--empty journal in Burak2009
-Warning--empty year in Burak2009
-Warning--empty journal in Guanella2007
-Warning--empty year in Guanella2007
-Warning--empty journal in Shipston-Sharman2016
-Warning--empty year in Shipston-Sharman2016
-Warning--empty journal in Couey2013
-Warning--empty year in Couey2013
-Warning--empty journal in Yoon2013
-Warning--empty year in Yoon2013
-Warning--empty journal in McNaughton2006
-Warning--empty year in McNaughton2006
-Warning--empty journal in Bonnevie2013
-Warning--empty year in Bonnevie2013
-Warning--empty journal in Kropff2015
-Warning--empty year in Kropff2015
-Warning--empty journal in Zhang1996
-Warning--empty year in Zhang1996
-Warning--empty year in Taube1990
-Warning--empty pages in Taube1990
-Warning--empty year in Milford2008d
-Warning--empty journal in Bush2015
-Warning--empty year in Bush2015
-Warning--empty journal in Edvardsen2020
-Warning--empty year in Edvardsen2020
-Warning--empty journal in Ball2013
-Warning--empty year in Ball2013
-You've used 41 entries,
+Warning--I didn't find a database entry for "Zhang1996"
+Warning--I didn't find a database entry for "Taube1990"
+Warning--I didn't find a database entry for "Milford2008d"
+Warning--I didn't find a database entry for "Bush2015"
+Warning--I didn't find a database entry for "Edvardsen2020"
+Warning--I didn't find a database entry for "Ball2013"
+Warning--empty school in DAlbis2018
+You've used 38 entries,
             2952 wiz_defined-function locations,
-            1009 strings with 15138 characters,
-and the built_in function-call counts, 15072 in all, are:
-= -- 1458
-> -- 521
-< -- 1
-+ -- 201
-- -- 160
-* -- 1579
-:= -- 2050
-add.period$ -- 82
-call.type$ -- 41
-change.case$ -- 40
+            999 strings with 13616 characters,
+and the built_in function-call counts, 13419 in all, are:
+= -- 1364
+> -- 491
+< -- 0
++ -- 189
+- -- 151
+* -- 1255
+:= -- 1860
+add.period$ -- 76
+call.type$ -- 38
+change.case$ -- 38
 chr.to.int$ -- 0
-cite$ -- 121
-duplicate$ -- 386
-empty$ -- 1545
-format.name$ -- 195
-if$ -- 3621
+cite$ -- 39
+duplicate$ -- 299
+empty$ -- 1341
+format.name$ -- 184
+if$ -- 3276
 int.to.chr$ -- 0
-int.to.str$ -- 41
-missing$ -- 41
-newline$ -- 203
-num.names$ -- 41
-pop$ -- 274
+int.to.str$ -- 38
+missing$ -- 37
+newline$ -- 160
+num.names$ -- 38
+pop$ -- 149
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 692
+skip$ -- 758
 stack$ -- 0
-substring$ -- 1002
-swap$ -- 125
-text.length$ -- 1
+substring$ -- 984
+swap$ -- 114
+text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 80
-while$ -- 115
-width$ -- 43
-write$ -- 412
-(There were 82 warnings)
+warning$ -- 1
+while$ -- 111
+width$ -- 40
+write$ -- 387
+(There were 9 warnings)
