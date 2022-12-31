@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.6.14)  21 DEC 2022 22:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.6.14)  28 DEC 2022 16:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1019,18 +1019,18 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 
 ]
-<Figure/2D_structure.png, id=215, 434.496pt x 373.833pt>
+<Figure/2D_structure.png, id=218, 434.496pt x 373.833pt>
 File: Figure/2D_structure.png Graphic file (type png)
 <use Figure/2D_structure.png>
 Package pdftex.def Info: Figure/2D_structure.png  used on input line 218.
 (pdftex.def)             Requested size: 234.8984pt x 202.10637pt.
-<Figure/3D_structure.png, id=217, 1042.44pt x 1042.44pt>
+<Figure/3D_structure.png, id=220, 1042.44pt x 1042.44pt>
 File: Figure/3D_structure.png Graphic file (type png)
 <use Figure/3D_structure.png>
 Package pdftex.def Info: Figure/3D_structure.png  used on input line 223.
 (pdftex.def)             Requested size: 234.8984pt x 234.88882pt.
  [2]
-<Figure/weight_profile.png, id=246, 462.528pt x 346.896pt>
+<Figure/weight_profile.png, id=247, 462.528pt x 346.896pt>
 File: Figure/weight_profile.png Graphic file (type png)
 <use Figure/weight_profile.png>
 Package pdftex.def Info: Figure/weight_profile.png  used on input line 265.
@@ -1039,12 +1039,12 @@ Package pdftex.def Info: Figure/weight_profile.png  used on input line 265.
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.280 \begin{equation}
-                      \label{eq:weight_gc} <./Figure/2D_structure.png> <./Figure/3D_structure.png>]
+l.274 \begin{numcases}{f(x)=}
+                              <./Figure/2D_structure.png> <./Figure/3D_structure.png>]
 
 Package natbib Warning: Citation `Bonnevie2013' on page 4 undefined on input line 292.
 
-<Figure/w-p-g.png, id=278, 598.746pt x 468.879pt>
+<Figure/w-p-g.png, id=279, 598.746pt x 468.879pt>
 File: Figure/w-p-g.png Graphic file (type png)
 <use Figure/w-p-g.png>
 Package pdftex.def Info: Figure/w-p-g.png  used on input line 296.
@@ -1083,9 +1083,6 @@ Package pdftex.def Info: Figure/show_excitation_4.png  used on input line 385.
 (pdftex.def)             Requested size: 130.5pt x 130.49854pt.
 
 
-Package natbib Warning: Citation `Zhang1996' on page 5 undefined on input line 392.
-
-
 Package natbib Warning: Citation `Taube1990' on page 5 undefined on input line 392.
 
 
@@ -1094,78 +1091,81 @@ Package natbib Warning: Citation `Milford2008d' on page 5 undefined on input lin
 
 Package natbib Warning: Citation `Milford2008d' on page 5 undefined on input line 392.
 
-[5
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [5
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.407 \end{align}
-                 
+l.400 \end{equation}
+                    
 pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.407 \end{align}
-                  <./Figure/w-p-g.png>]
-<Figure/drive_bump_1.png, id=332, 346.896pt x 346.896pt>
+l.400 \end{equation}
+                     <./Figure/w-p-g.png>]
+<Figure/drive_bump_1.png, id=336, 346.896pt x 346.896pt>
 File: Figure/drive_bump_1.png Graphic file (type png)
 <use Figure/drive_bump_1.png>
 Package pdftex.def Info: Figure/drive_bump_1.png  used on input line 441.
 (pdftex.def)             Requested size: 104.3984pt x 104.39777pt.
-<Figure/drive_bump_3.png, id=333, 346.896pt x 346.896pt>
+<Figure/drive_bump_3.png, id=337, 346.896pt x 346.896pt>
 File: Figure/drive_bump_3.png Graphic file (type png)
 <use Figure/drive_bump_3.png>
 Package pdftex.def Info: Figure/drive_bump_3.png  used on input line 446.
 (pdftex.def)             Requested size: 104.3984pt x 104.39777pt.
-<Figure/drive_bump_5.png, id=334, 346.896pt x 346.896pt>
+<Figure/drive_bump_5.png, id=338, 346.896pt x 346.896pt>
 File: Figure/drive_bump_5.png Graphic file (type png)
 <use Figure/drive_bump_5.png>
 Package pdftex.def Info: Figure/drive_bump_5.png  used on input line 451.
 (pdftex.def)             Requested size: 104.3984pt x 104.39777pt.
-<Figure/drive_bump_7.png, id=335, 346.896pt x 346.896pt>
+<Figure/drive_bump_7.png, id=339, 346.896pt x 346.896pt>
 File: Figure/drive_bump_7.png Graphic file (type png)
 <use Figure/drive_bump_7.png>
 Package pdftex.def Info: Figure/drive_bump_7.png  used on input line 456.
 (pdftex.def)             Requested size: 104.3984pt x 104.39777pt.
-<Figure/drive_bump_9.png, id=336, 346.896pt x 346.896pt>
+<Figure/drive_bump_9.png, id=340, 346.896pt x 346.896pt>
 File: Figure/drive_bump_9.png Graphic file (type png)
 <use Figure/drive_bump_9.png>
 Package pdftex.def Info: Figure/drive_bump_9.png  used on input line 461.
 (pdftex.def)             Requested size: 104.3984pt x 104.39777pt.
-<Figure/drive_bump_11.png, id=337, 346.896pt x 346.896pt>
+<Figure/drive_bump_11.png, id=341, 346.896pt x 346.896pt>
 File: Figure/drive_bump_11.png Graphic file (type png)
 <use Figure/drive_bump_11.png>
 Package pdftex.def Info: Figure/drive_bump_11.png  used on input line 468.
 (pdftex.def)             Requested size: 104.3984pt x 104.39777pt.
-<Figure/drive_bump_13.png, id=338, 346.896pt x 346.896pt>
+<Figure/drive_bump_13.png, id=342, 346.896pt x 346.896pt>
 File: Figure/drive_bump_13.png Graphic file (type png)
 <use Figure/drive_bump_13.png>
 Package pdftex.def Info: Figure/drive_bump_13.png  used on input line 473.
 (pdftex.def)             Requested size: 104.3984pt x 104.39777pt.
-<Figure/drive_bump_15.png, id=339, 346.896pt x 346.896pt>
+<Figure/drive_bump_15.png, id=343, 346.896pt x 346.896pt>
 File: Figure/drive_bump_15.png Graphic file (type png)
 <use Figure/drive_bump_15.png>
 Package pdftex.def Info: Figure/drive_bump_15.png  used on input line 478.
 (pdftex.def)             Requested size: 104.3984pt x 104.39777pt.
-<Figure/drive_bump_17.png, id=340, 346.896pt x 346.896pt>
+<Figure/drive_bump_17.png, id=344, 346.896pt x 346.896pt>
 File: Figure/drive_bump_17.png Graphic file (type png)
 <use Figure/drive_bump_17.png>
 Package pdftex.def Info: Figure/drive_bump_17.png  used on input line 483.
 (pdftex.def)             Requested size: 104.3984pt x 104.39777pt.
-<Figure/drive_bump_19.png, id=341, 346.896pt x 346.896pt>
+<Figure/drive_bump_19.png, id=345, 346.896pt x 346.896pt>
 File: Figure/drive_bump_19.png Graphic file (type png)
 <use Figure/drive_bump_19.png>
 Package pdftex.def Info: Figure/drive_bump_19.png  used on input line 488.
 (pdftex.def)             Requested size: 104.3984pt x 104.39777pt.
-<Figure/single_neuron_firing_1.png, id=352, 361.35pt x 361.35pt>
+<Figure/single_neuron_firing_1.png, id=356, 361.35pt x 361.35pt>
 File: Figure/single_neuron_firing_1.png Graphic file (type png)
 <use Figure/single_neuron_firing_1.png>
 Package pdftex.def Info: Figure/single_neuron_firing_1.png  used on input line 504.
 (pdftex.def)             Requested size: 172.26096pt x 172.26057pt.
-<Figure/single_neuron_firing_2.png, id=353, 361.35pt x 361.35pt>
+<Figure/single_neuron_firing_2.png, id=357, 361.35pt x 361.35pt>
 File: Figure/single_neuron_firing_2.png Graphic file (type png)
 <use Figure/single_neuron_firing_2.png>
 Package pdftex.def Info: Figure/single_neuron_firing_2.png  used on input line 509.
 (pdftex.def)             Requested size: 172.26096pt x 172.26057pt.
-<Figure/single_neuron_firing_3.png, id=354, 361.35pt x 361.35pt>
+<Figure/single_neuron_firing_3.png, id=358, 361.35pt x 361.35pt>
 File: Figure/single_neuron_firing_3.png Graphic file (type png)
 <use Figure/single_neuron_firing_3.png>
 Package pdftex.def Info: Figure/single_neuron_firing_3.png  used on input line 514.
@@ -1174,70 +1174,67 @@ Package pdftex.def Info: Figure/single_neuron_firing_3.png  used on input line 5
 
 Package natbib Warning: Citation `Edvardsen2020' on page 6 undefined on input line 519.
 
-<Figure/single_neuron_firing_1.0_0.00.png, id=360, 361.35pt x 361.35pt>
-File: Figure/single_neuron_firing_1.0_0.00.png Graphic file (type png)
-<use Figure/single_neuron_firing_1.0_0.00.png>
-Package pdftex.def Info: Figure/single_neuron_firing_1.0_0.00.png  used on input line 530.
-(pdftex.def)             Requested size: 172.26096pt x 172.26057pt.
-<Figure/single_neuron_firing_1.0_0.52.png, id=361, 361.35pt x 361.35pt>
-File: Figure/single_neuron_firing_1.0_0.52.png Graphic file (type png)
-<use Figure/single_neuron_firing_1.0_0.52.png>
-Package pdftex.def Info: Figure/single_neuron_firing_1.0_0.52.png  used on input line 535.
-(pdftex.def)             Requested size: 172.26096pt x 172.26057pt.
-<Figure/single_neuron_firing_1.0_0.79.png, id=362, 361.35pt x 361.35pt>
-File: Figure/single_neuron_firing_1.0_0.79.png Graphic file (type png)
-<use Figure/single_neuron_firing_1.0_0.79.png>
-Package pdftex.def Info: Figure/single_neuron_firing_1.0_0.79.png  used on input line 540.
-(pdftex.def)             Requested size: 172.26096pt x 172.26057pt.
-<Figure/single_neuron_firing_1.2_0.00.png, id=363, 361.35pt x 361.35pt>
-File: Figure/single_neuron_firing_1.2_0.00.png Graphic file (type png)
-<use Figure/single_neuron_firing_1.2_0.00.png>
-Package pdftex.def Info: Figure/single_neuron_firing_1.2_0.00.png  used on input line 548.
-(pdftex.def)             Requested size: 172.26096pt x 172.26057pt.
-<Figure/single_neuron_firing_1.2_0.52.png, id=364, 361.35pt x 361.35pt>
-File: Figure/single_neuron_firing_1.2_0.52.png Graphic file (type png)
-<use Figure/single_neuron_firing_1.2_0.52.png>
-Package pdftex.def Info: Figure/single_neuron_firing_1.2_0.52.png  used on input line 553.
-(pdftex.def)             Requested size: 172.26096pt x 172.26057pt.
-<Figure/single_neuron_firing_1.2_0.79.png, id=365, 361.35pt x 361.35pt>
-File: Figure/single_neuron_firing_1.2_0.79.png Graphic file (type png)
-<use Figure/single_neuron_firing_1.2_0.79.png>
-Package pdftex.def Info: Figure/single_neuron_firing_1.2_0.79.png  used on input line 558.
-(pdftex.def)             Requested size: 172.26096pt x 172.26057pt.
-<Figure/single_neuron_firing_1.5_0.00.png, id=366, 361.35pt x 361.35pt>
-File: Figure/single_neuron_firing_1.5_0.00.png Graphic file (type png)
-<use Figure/single_neuron_firing_1.5_0.00.png>
-Package pdftex.def Info: Figure/single_neuron_firing_1.5_0.00.png  used on input line 565.
-(pdftex.def)             Requested size: 172.26096pt x 172.26057pt.
-<Figure/single_neuron_firing_1.5_0.52.png, id=367, 361.35pt x 361.35pt>
-File: Figure/single_neuron_firing_1.5_0.52.png Graphic file (type png)
-<use Figure/single_neuron_firing_1.5_0.52.png>
-Package pdftex.def Info: Figure/single_neuron_firing_1.5_0.52.png  used on input line 570.
-(pdftex.def)             Requested size: 172.26096pt x 172.26057pt.
-<Figure/single_neuron_firing_1.5_0.79.png, id=368, 361.35pt x 361.35pt>
-File: Figure/single_neuron_firing_1.5_0.79.png Graphic file (type png)
-<use Figure/single_neuron_firing_1.5_0.79.png>
-Package pdftex.def Info: Figure/single_neuron_firing_1.5_0.79.png  used on input line 575.
-(pdftex.def)             Requested size: 172.26096pt x 172.26057pt.
 [6
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.584 \begin{equation}
-                      \label{eq:relation_precise} <./Figure/show_excitation_1.png> <./Figure/show_excitation_2.png> <./Figure/show_excitation_3.png> <./Figure/show_excitation_4.png>]
-<Figure/diff_spacing.png, id=393, 722.7pt x 216.81pt>
+l.520 
+       <./Figure/show_excitation_1.png> <./Figure/show_excitation_2.png> <./Figure/show_excitation_3.png> <./Figure/show_excitation_4.png>]
+<Figure/single_neuron_firing_1.0_0.00.png, id=384, 361.35pt x 361.35pt>
+File: Figure/single_neuron_firing_1.0_0.00.png Graphic file (type png)
+<use Figure/single_neuron_firing_1.0_0.00.png>
+Package pdftex.def Info: Figure/single_neuron_firing_1.0_0.00.png  used on input line 530.
+(pdftex.def)             Requested size: 172.26096pt x 172.26057pt.
+<Figure/single_neuron_firing_1.0_0.52.png, id=385, 361.35pt x 361.35pt>
+File: Figure/single_neuron_firing_1.0_0.52.png Graphic file (type png)
+<use Figure/single_neuron_firing_1.0_0.52.png>
+Package pdftex.def Info: Figure/single_neuron_firing_1.0_0.52.png  used on input line 535.
+(pdftex.def)             Requested size: 172.26096pt x 172.26057pt.
+<Figure/single_neuron_firing_1.0_0.79.png, id=386, 361.35pt x 361.35pt>
+File: Figure/single_neuron_firing_1.0_0.79.png Graphic file (type png)
+<use Figure/single_neuron_firing_1.0_0.79.png>
+Package pdftex.def Info: Figure/single_neuron_firing_1.0_0.79.png  used on input line 540.
+(pdftex.def)             Requested size: 172.26096pt x 172.26057pt.
+<Figure/single_neuron_firing_1.2_0.00.png, id=387, 361.35pt x 361.35pt>
+File: Figure/single_neuron_firing_1.2_0.00.png Graphic file (type png)
+<use Figure/single_neuron_firing_1.2_0.00.png>
+Package pdftex.def Info: Figure/single_neuron_firing_1.2_0.00.png  used on input line 548.
+(pdftex.def)             Requested size: 172.26096pt x 172.26057pt.
+<Figure/single_neuron_firing_1.2_0.52.png, id=388, 361.35pt x 361.35pt>
+File: Figure/single_neuron_firing_1.2_0.52.png Graphic file (type png)
+<use Figure/single_neuron_firing_1.2_0.52.png>
+Package pdftex.def Info: Figure/single_neuron_firing_1.2_0.52.png  used on input line 553.
+(pdftex.def)             Requested size: 172.26096pt x 172.26057pt.
+<Figure/single_neuron_firing_1.2_0.79.png, id=389, 361.35pt x 361.35pt>
+File: Figure/single_neuron_firing_1.2_0.79.png Graphic file (type png)
+<use Figure/single_neuron_firing_1.2_0.79.png>
+Package pdftex.def Info: Figure/single_neuron_firing_1.2_0.79.png  used on input line 558.
+(pdftex.def)             Requested size: 172.26096pt x 172.26057pt.
+<Figure/single_neuron_firing_1.5_0.00.png, id=390, 361.35pt x 361.35pt>
+File: Figure/single_neuron_firing_1.5_0.00.png Graphic file (type png)
+<use Figure/single_neuron_firing_1.5_0.00.png>
+Package pdftex.def Info: Figure/single_neuron_firing_1.5_0.00.png  used on input line 565.
+(pdftex.def)             Requested size: 172.26096pt x 172.26057pt.
+<Figure/single_neuron_firing_1.5_0.52.png, id=391, 361.35pt x 361.35pt>
+File: Figure/single_neuron_firing_1.5_0.52.png Graphic file (type png)
+<use Figure/single_neuron_firing_1.5_0.52.png>
+Package pdftex.def Info: Figure/single_neuron_firing_1.5_0.52.png  used on input line 570.
+(pdftex.def)             Requested size: 172.26096pt x 172.26057pt.
+<Figure/single_neuron_firing_1.5_0.79.png, id=392, 361.35pt x 361.35pt>
+File: Figure/single_neuron_firing_1.5_0.79.png Graphic file (type png)
+<use Figure/single_neuron_firing_1.5_0.79.png>
+Package pdftex.def Info: Figure/single_neuron_firing_1.5_0.79.png  used on input line 575.
+(pdftex.def)             Requested size: 172.26096pt x 172.26057pt.
+<Figure/diff_spacing.png, id=397, 722.7pt x 216.81pt>
 File: Figure/diff_spacing.png Graphic file (type png)
 <use Figure/diff_spacing.png>
 Package pdftex.def Info: Figure/diff_spacing.png  used on input line 596.
 (pdftex.def)             Requested size: 469.79681pt x 140.93805pt.
-<Figure/diff_netsize.png, id=394, 722.7pt x 216.81pt>
+<Figure/diff_netsize.png, id=398, 722.7pt x 216.81pt>
 File: Figure/diff_netsize.png Graphic file (type png)
 <use Figure/diff_netsize.png>
 Package pdftex.def Info: Figure/diff_netsize.png  used on input line 602.
 (pdftex.def)             Requested size: 469.79681pt x 140.93805pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
  [7
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
@@ -1249,7 +1246,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) has
                                                   \__shipout_drop_firstpage_...
 l.609 
        <./Figure/drive_bump_1.png> <./Figure/drive_bump_3.png> <./Figure/drive_bump_5.png> <./Figure/drive_bump_7.png> <./Figure/drive_bump_9.png> <./Figure/drive_bump_11.png> <./Figure/drive_bump_13.png> <./Figure/drive_bump_15.png> <./Figure/drive_bump_17.png> <./Figure/drive_bump_19.png> <./Figure/single_neuron_firing_1.png> <./Figure/single_neuron_firing_2.png> <./Figure/single_neuron_firing_3.png>]
-<Figure/PI_feedback.png, id=430, 722.7pt x 216.81pt>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+<Figure/PI_feedback.png, id=434, 722.7pt x 216.81pt>
 File: Figure/PI_feedback.png Graphic file (type png)
 <use Figure/PI_feedback.png>
 Package pdftex.def Info: Figure/PI_feedback.png  used on input line 616.
@@ -1260,18 +1259,26 @@ Overfull \hbox (5.0pt too wide) in paragraph at lines 616--617
  []
 
 
-Package natbib Warning: Citation `Ball2013' on page 8 undefined on input line 623.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [8
 pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.624 
-       <./Figure/single_neuron_firing_1.0_0.00.png> <./Figure/single_neuron_firing_1.0_0.52.png> <./Figure/single_neuron_firing_1.0_0.79.png> <./Figure/single_neuron_firing_1.2_0.00.png> <./Figure/single_neuron_firing_1.2_0.52.png> <./Figure/single_neuron_firing_1.2_0.79.png> <./Figure/single_neuron_firing_1.5_0.00.png> <./Figure/single_neuron_firing_1.5_0.52.png> <./Figure/single_neuron_firing_1.5_0.79.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+l.619 \end{figure*}
+                    <./Figure/single_neuron_firing_1.0_0.00.png> <./Figure/single_neuron_firing_1.0_0.52.png> <./Figure/single_neuron_firing_1.0_0.79.png> <./Figure/single_neuron_firing_1.2_0.00.png> <./Figure/single_neuron_firing_1.2_0.52.png> <./Figure/single_neuron_firing_1.2_0.79.png> <./Figure/single_neuron_firing_1.5_0.00.png> <./Figure/single_neuron_firing_1.5_0.52.png> <./Figure/single_neuron_firing_1.5_0.79.png>]
+<Figure/PI_long.png, id=460, 722.7pt x 216.81pt>
+File: Figure/PI_long.png Graphic file (type png)
+<use Figure/PI_long.png>
+Package pdftex.def Info: Figure/PI_long.png  used on input line 628.
+(pdftex.def)             Requested size: 522.0pt x 156.5993pt.
+
+Overfull \hbox (5.0pt too wide) in paragraph at lines 628--629
+ [][] 
+ []
+
+
+Package natbib Warning: Citation `Ball2013' on page 9 undefined on input line 635.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1280,25 +1287,29 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.626 
-      
+l.638 
+       <./Figure/diff_spacing.png> <./Figure/diff_netsize.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 1331) in paragraph at lines 641--642
+\OT1/txr/m/n/10 i-folds([][]Fuhs and Touret-zky[][], [][]2006[][]; [][]Bu-rak and Fi-ete[][], [][]2009[][];
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [10
 pdfTeX warning (ext4): destination with the same identifier (name{figure.9}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.626 
-       <./Figure/diff_spacing.png> <./Figure/diff_netsize.png> <./Figure/PI_feedback.png>]
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input line 632.
-<Figure/PI_long.png, id=518, 722.7pt x 216.81pt>
-File: Figure/PI_long.png Graphic file (type png)
-<use Figure/PI_long.png>
-Package pdftex.def Info: Figure/PI_long.png  used on input line 645.
-(pdftex.def)             Requested size: 522.0pt x 156.5993pt.
-
-Overfull \hbox (5.0pt too wide) in paragraph at lines 645--646
- [][] 
- []
-
-(/Users/wisdom/Desktop/Git/Latex_PhaseCANN/v1_manuscripts/.texpadtmp/PhaseCANN.bbl
+l.642 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{figure.10}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.642 
+       <./Figure/PI_feedback.png> <./Figure/PI_long.png>] (/Users/wisdom/Desktop/Git/Latex_PhaseCANN/v1_manuscripts/.texpadtmp/PhaseCANN.bbl
 Underfull \hbox (badness 1142) in paragraph at lines 137--149
 \OT1/txr/m/n/8 la-tion ac-tiv-ity in grid cells.  Na-ture 602, 123--128.  doi:[][]$\OT1/cmtt/m/n/8 10 . 1038 /
  []
@@ -1306,34 +1317,29 @@ Underfull \hbox (badness 1142) in paragraph at lines 137--149
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [10])
+ [11])
 
 Package natbib Warning: There were undefined citations.
 
-[11
-pdfTeX warning (ext4): destination with the same identifier (name{figure.10}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.673 \end{document}
-                    
+[12
 
- <./Figure/PI_long.png>] (/Users/wisdom/Desktop/Git/Latex_PhaseCANN/v1_manuscripts/.texpadtmp/PhaseCANN.aux)
+] (/Users/wisdom/Desktop/Git/Latex_PhaseCANN/v1_manuscripts/.texpadtmp/PhaseCANN.aux)
 Package rerunfilecheck Info: File `PhaseCANN.out' has not changed.
 (rerunfilecheck)             Checksum: 0AABA10F97004CA5E1094CB8F4A6D944;1395.
  ) 
 Here is how much of TeX's memory you used:
- 23922 strings out of 478268
- 440933 string characters out of 5846347
- 724883 words of memory out of 5000000
- 41498 multiletter control sequences out of 15000+600000
+ 23859 strings out of 478268
+ 439274 string characters out of 5846347
+ 726167 words of memory out of 5000000
+ 41434 multiletter control sequences out of 15000+600000
  518952 words of font info for 144 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,14n,94p,2749b,859s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,14n,94p,2749b,542s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/txfonts/rtxb.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/txfonts/rtxbmi.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on /Users/wisdom/Desktop/Git/Latex_PhaseCANN/v1_manuscripts/.texpadtmp/PhaseCANN.pdf (11 pages, 7883576 bytes).
+Output written on /Users/wisdom/Desktop/Git/Latex_PhaseCANN/v1_manuscripts/.texpadtmp/PhaseCANN.pdf (12 pages, 7887132 bytes).
 PDF statistics:
- 665 PDF objects out of 1000 (max. 8388607)
- 551 compressed objects within 6 object streams
- 134 named destinations out of 1000 (max. 500000)
+ 696 PDF objects out of 1000 (max. 8388607)
+ 581 compressed objects within 6 object streams
+ 135 named destinations out of 1000 (max. 500000)
  255 words of extra memory for PDF output out of 10000 (max. 10000000)
 

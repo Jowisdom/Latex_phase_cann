@@ -222,7 +222,7 @@ As mentioned above, many computational models of grid cells are proposed to expl
 		\label{fig:can_structure_b}
 	}
 
-	\caption{The phase CAN structure}
+	\caption{The structure of PhaseCAN. (a) The neurons in a singular grid-cell module are arranged on a sheet according to their phases. They are mutually connected by weight profile according to distance between them on the sheet. The distance between neurons needs to consider the periodic boundary condition. (b) The networks with periodic boundary condition can form toroidal manifold. In the toroidal manifold, the neurons are mutually connected according to their weights.}
 	\label{fig:can_structure}
 \end{figure*}
 
@@ -563,17 +563,17 @@ To further demonstrate the activities of single neuron in different grid cell mo
 	%\caption{fig1}
 	\label{fig:single_neuron_firing_diff_prop_g}
 }
-\hspace{-8mm}
+\hspace{-10pt}
 \subfigure[]{
 	\includegraphics[width=0.33\linewidth]{Figure/single_neuron_firing_1.5_0.52.png}
 	\label{fig:single_neuron_firing_diff_prop_h}		
 }
-\hspace{-8mm}
+\hspace{-10pt}
 \subfigure[]{
 	\includegraphics[width=0.33\linewidth]{Figure/single_neuron_firing_1.5_0.79.png}
 	\label{fig:single_neuron_firing_diff_prop_i}		
 }
-	\caption{The firing patterns of the single grid cell in the different module but in same position of the PhaseCAN. }
+	\caption{The firing patterns of the single grid cell in the different module but in same position of the PhaseCAN. The firing patterns in different orientation for the grid cell in same position of network are illustrated from left to right. With the increasing orientation of grid-cell module, the grid patterns incrementally rotate. The firing patterns with different spacing of the grid-cell modules are compared from top to bottom. The scales of single grid-cell firing patterns incrementally raised with the increasing spacing of grid-cell modules. }
 	\label{fig:single_neuron_firing_diff_prop}
 	\vspace{-2pt}
 \end{figure*}
@@ -605,7 +605,7 @@ where $s$ represents the spacing of grid cells, $N$ is the size of the network, 
 	\label{fig:path_integration}
 \end{figure*}
 
-In general, the error of path integration is accumulated with iteration. To eliminate the error, the visual cues are introduced and correct the deviation. In our model, as Fig.~\ref{fig:w2p2g} shown, the landmarks in the actual world are mapping to the network of place cells. Then the excitation in the place cell network is transformed and mapping to the firing space of grid cells. This can help the grid cell module to reduce the influence from accumulative error. In here, the excitation from place cell are injected into network of the grid cell module per $500$ steps. The error of path integration is recorded per $100$ steps to obviously show the difference between PhaseCAN model with and without feedback. This comparison is shown in Fig.~\ref{fig:path_integration_feedback}. during the initial process, their errors all remains a low level. However, along the increasing steps, the PhaseCAN with feedback still can keep a low deviation. In contrast, the error of the PhaseCAN without feedback will increasingly increase.  The results manifest our model have the ability to reduce the accumulated error.
+In general, the error of path integration is accumulated with iteration. To eliminate the error, the visual cues are introduced and correct the deviation. In our model, as Fig.~\ref{fig:w2p2g} shown, the landmarks in the actual world are mapping to the network of place cells. Then the excitation in the place cell network is transformed and mapping to the firing space of grid cells. This can help the grid cell module to reduce the influence from accumulative error. In here, the excitation from place cell are injected into network of the grid cell module per $500$ steps. The error of path integration is recorded per $100$ steps to obviously show the difference between PhaseCAN model with and without feedback. This comparison is shown in Fig.~\ref{fig:path_integration_feedback}. during the initial process, their errors all remains a low level. However, along the increasing steps, the PhaseCAN with feedback still can keep a low deviation. In contrast, the error of the PhaseCAN without feedback will increasingly increase.  The results manifest our model have the ability to reduce the accumulated error with feedback.
 
 \begin{figure*}[!t]
 	%	\subfigcapskip=-10pt %调整子图片与子标题的距离
@@ -614,8 +614,20 @@ In general, the error of path integration is accumulated with iteration. To elim
 		\includegraphics[width=1.0\linewidth]{Figure/PI_feedback.png}
 		%\caption{fig1}		
 	}
-	\caption{Error comparison of path integration with and without feedback from a place cell network.  }
+	\caption{Error comparison of path integration with and without feedback.  }
 	\label{fig:path_integration_feedback}
+\end{figure*}
+
+To explore the ability of our model for path integration in long voyage, path integration is performed in longer steps. This is depicted in Fig.~\ref{fig:path_integration_long}. In three different grid-cell modules, their error remains a scope even after $100000$ steps without feedback from place cells. This also can partly explains why the rodent animals can return their dens even though they have go for a very long distance. 
+\begin{figure*}[t]
+	%	\subfigcapskip=-10pt %调整子图片与子标题的距离
+	\centering
+	\subfigure{
+		\includegraphics[width=1.0\linewidth]{Figure/PI_long.png}
+		%\caption{fig1}		
+	}
+	\caption{Error comparison of path integration without feedback in long voyage. }
+	\label{fig:path_integration_long}
 \end{figure*}
 
 
@@ -624,28 +636,9 @@ The rodent animals have outstanding navigation ability\citep{Ball2013}. They can
 
 To explore the latent mechanism of grid cells, many computational models are designed. The main models of grid cells contain OI models\citep{OKeefe2005,Burgess2007,Hasselmo2007,Pastoll2013,Burgess2008}, CAN models\citep{Fuhs2006,Burak2009,Guanella2007,Shipston-Sharman2016,Couey2013} and single-cell adaptation models\citep{Kropff2008,Si2012}. They mainly focus on the firing activity of single grid cell and generate the hexagonal patterns from different perspectives using self-motion inputs or external cues. However, the evidence shows that the grid cells are ordered in discrete modules and each grid-cell module shares common spacing, orientation\citep{Stensola2012,Rowland2016}. In addition, recent research demonstrates the grid cells from an single module exist on a toroidal manifold like 2D CAN using enormous records from many hundreds of grid cells and topological data analysis\citep{Gardner2022}. Some new features are found from the views of grid-cell modules. The analysis shows that the positions in the toroidal manifold can map the positions of animals in the physical world and single grid cell prefers to be activated at a singular position on the torus\citep{Gardner2022}. Current CAN models\citep{Fuhs2006,Burak2009,Guanella2007} can not be inconsistent with the analysis. Because the current CAN models are designed based on single grid cell and the properties of grid-cell modules do not be taken into account. Here, a CAN model for grid-cell module is proposed. It is driven by self-motion input of animals and receives the stimulation from external cues through place cells. Each neuron is preferentially active at a unique position on the torus and activated positions on the network represent the position of animals in the environment. This is consistent with the data analysis of \citet{Gardner2022}.  It demonstrates that our model supports the hypothesis about the grid-cell modules in the \citet{Gardner2022}.
 
+The key hypothesis for CAN model is that path integration can be performed by moving the bump in the network on the sheet\citep{Fuhs2006}. Many mechanisms are designed to shift the bump around a ring\citep{Zhang1996} or over a sheet\citep{Burak2009}. Comparing with other models, our model drives the attractor bump by transforming the self-motion inputs in the environment into grid-cell cognitive space. To simplify the process, the speed and head direction are calculated to acquire a minor translation. Then the translation is transformed into grid-cell cognitive space instead of transforming directly speed and head direction. Another problem of path integration is the correction of accumulated errors by sensory cues. Our model resets the path integration using the inputs from place cells. The landmarks in the environment stimulate the place-cell network and then the activated bump in this network is transformed into grid-cell cognitive space. If the current bump on the grid-cell torus is different from the activated position from the external cues, the grid-cell CAN will be corrected and stabilized by intrinsic dynamic of network. The results of our model demonstrate the ability to achieve the path integration in Fig.~\ref{fig:show_excitation} and Fig.~\ref{fig:drive_bump}. Then we explore the prominent ability for path integration and seek the factors that affect the precision of path integration. The results show that network resolution ratios and the feedback can affect the precision of path integration and correct the accumulated errors in Fig.~\ref{fig:path_integration_feedback} and Fig.~\ref{fig:path_integration_feedback}. In addition, the results illustrate that our model can remain a low accumulated errors in long voyage only depending on own intrinsic network dynamic even when it lacks external cues. It also partly explains why the rodent animals have so prominent ability of navigation.
 
-
-
-
-
-\todo[inline]{here}
-
-
-
-
-
-In here, our model is used to perform the path integration in longer steps. This is depicted in Fig.~\ref{fig:path_integration_long}. In three different grid-cell modules, their error remains a scope even after $100000$ steps without feedback from place cells. This also can partly explains why the rodent animals can return their dens even though they have go for a very long distance. 
-\begin{figure*}[t]
-	%	\subfigcapskip=-10pt %调整子图片与子标题的距离
-	\centering
-	\subfigure{
-		\includegraphics[width=1.0\linewidth]{Figure/PI_long.png}
-		%\caption{fig1}		
-	}
-	\caption{Error comparison of path integration with and without feedback from a place cell network.  }
-	\label{fig:path_integration_long}
-\end{figure*}
+	Current models of grid cells generate the hexagonal firing patterns and show the patterns on the 2D toroidal manifolds\citep{Fuhs2006,Burak2009,Guanella2007}. Different from these models, our model more emphasizes the connection between grid-cell neurons on a singular module. So the firing patterns of grid cells can not be directly shown on the torus. To acquire the firing patterns of grid cells on the module, the firing acticity of single neuron on the module need to be recorded with driving the whole model. The results are illustrated in Fig.~\ref{fig:single_neuron_firing}. The activity of three neuron on the single module are recorded and show the hexagonal firing patterns. After that, activity of more neurons on different modules are recorded in Fig.\ref{fig:single_neuron_firing_diff_prop}. They are consistent with the biological experimental results and show different spacing, orientation on different modules.
 
 In summary, the PhaseCAN model was proposed for grid-cell module. Then the self-motion inputs are designed to drive the PhaseCAN model. In addition, to provides visual feedback for grid-cell module during the process of the path integration, the connection between place cell and grid cell is established. Simultaneously, the hexagonal firing patterns of single grid cell can be acquired by recording the firing activity of single neuron in the PhaseCAN model. Finally, we use our model to perform the path integration and comparing the results in different grid-cell properties and sizes of the PhaseCAN. The results point out that the network resolution ratio can influence the accuracy of the path integration. Furthermore, the results also manifests that our model can acquire outstanding performance even in the absence of external cues and on a large scale.
 \section{Declaration of Competing Interest}
